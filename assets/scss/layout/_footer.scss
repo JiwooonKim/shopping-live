@@ -1,0 +1,113 @@
+.footer {
+    padding-bottom: 30px;
+    border-top: 1px solid #ebebeb;
+    background-color: #fff;
+    text-align: center;
+
+    .inner { padding: 0 18px; }
+    .group-notice {
+        border-bottom: 1px solid #ebebeb;
+        background-color: #f7f7f7;
+
+        .title-area {
+            @include flexCenterVertical;
+            justify-content: space-between;
+            height: 38px;
+            display: flex;
+            padding: 0 18px;
+            border-bottom: 1px solid #ededed;
+        }
+        .title-area strong { font-weight: bold; font-size: 14px; color: $color-black1; }
+        .link-more {
+            @include flexCenterVertical;
+            font-size: 13px;
+            color: $color-gray1;
+        }
+        .link-more svg { margin-left: 4px; }
+        .desc-area {
+            padding: 13px 18px 14px;
+            line-height: 1.24;
+            font-size: 13px;
+            color: $color-gray1;
+            letter-spacing: -0.5px;
+            text-align: left;
+        }
+    }
+    .group-link {
+        margin: 18px 10px 0;
+
+        a[class*="link-"] {
+            display: inline-block;
+            margin: 0 4px 0;
+            padding: 0 10px;
+            border: 1px solid #e0e0e0;
+            border-radius: 4px;
+            background-color: $color-white1;
+            line-height: 28px;
+            font-size: 13px;
+        }
+    }
+    .group-info {
+        .btn-info {
+            display: flex;  
+            gap: 5px; 
+            margin: 15px auto 10px;
+            line-height: 1.24;
+            font-size: 13px;
+            color: #303038;
+            &.on { svg {transform: rotate(-90deg);} }
+        }
+        .btn-info svg {
+            margin-left: 1px;
+            margin-top: 1px;
+            transform: rotate(90deg);
+            vertical-align: 1px;
+        }
+        .btn-wrap {
+            display: none;
+            margin: 10px 15px 0px;
+            padding: 9px 0 8px;
+            background-color: #f8f8f8;
+
+            &.on { display: block; }
+            .info-list {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .info-item {
+                display: grid;
+                grid-template-columns: 115px 167px;
+                font-size: 11px;
+                line-height: 1.55;
+                color: $color-gray1;
+                text-align: left;
+            }
+        }
+    }
+    .group-addr {
+        margin-top: 10px;
+
+        a {
+            display: inline-block;
+            line-height: 1.85;
+            font-size: 13px;
+            color: $color-gray3;
+        }
+
+        a~a::before {
+            content: '';
+            display: inline-block;
+            width: 1px;
+            height: 10px;
+            margin: 7px 7px 0;
+            background-color: #d7d7d7;
+            vertical-align: top;
+        }
+        strong { font-weight: bold; }
+    }
+    .group-logo {
+        @include flexCenter;
+        margin-top: 20px;
+    }
+}

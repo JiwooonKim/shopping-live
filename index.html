@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>네이버 쇼핑LIVE</title>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="common-inner">
+            <div class="group-header">
+                <h1 class="logo-area">
+                    <a href="">
+                        <span class="blind">쇼핑LIVE</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="79" height="28" viewBox="0 0 79 28" focusable="false" aria-hidden="false" role="img"><defs><linearGradient id="logo_svg__a" x1="49.999%" x2="49.999%" y1="4.561%" y2="105.472%"><stop offset="0%" stop-color="#F4361D"></stop><stop offset="100%" stop-color="#F61C00"></stop></linearGradient></defs><g fill="none" fill-rule="evenodd"><path fill="url(#logo_svg__a)" d="m77.605.806-38.07 2.316a1.007 1.007 0 0 0-.946 1.006v17.376c0 .533.414.974.946 1.007l4.651.282v4.784c0 .166.188.261.322.163l6.153-4.554 26.944 1.64a1.009 1.009 0 0 0 1.07-1.006V1.813a1.01 1.01 0 0 0-1.07-1.007"></path><path fill="#1E1E1E" d="M13.196 13.841h-2.524a.216.216 0 0 0-.216.216v3.623H7.885v-3.623a.215.215 0 0 0-.216-.216H5.145a.216.216 0 0 0-.216.216v3.623H.354a.215.215 0 0 0-.215.215v2.122c0 .12.096.216.215.216h17.633a.216.216 0 0 0 .215-.216v-2.122a.215.215 0 0 0-.215-.215h-4.575v-3.623a.216.216 0 0 0-.216-.216"></path><path fill="#1E1E1E" d="M2.985 14.204 9.17 9.418l6.186 4.786a.215.215 0 0 0 .303-.041l1.403-1.873a.219.219 0 0 0-.041-.3L11.34 7.6a1.635 1.635 0 0 1-.632-1.29V4.222a.215.215 0 0 0-.215-.215H7.847a.214.214 0 0 0-.215.215V6.31c0 .505-.234.98-.633 1.29L1.32 11.99a.216.216 0 0 0-.041.3l1.401 1.873c.072.095.21.115.304.04M31.886 3.414v10.028c0 .12.097.216.217.216h2.544c.12 0 .215-.097.215-.216V3.414a.215.215 0 0 0-.215-.216h-2.544a.217.217 0 0 0-.217.216m-8.902 7.28h2.78V6.103h-2.78v4.59zm6.983 0H28.49V6.102h1.478c.12 0 .215-.096.215-.215V3.85a.215.215 0 0 0-.215-.216H18.706a.216.216 0 0 0-.215.216v2.037c0 .119.097.215.215.215h1.543v4.592h-1.543a.215.215 0 0 0-.215.215v2.037c0 .119.097.215.215.215h11.261c.12 0 .215-.096.215-.215v-2.037a.215.215 0 0 0-.215-.215zm1.237 8.586c0 1.336-1.14 2.424-2.54 2.424-1.401 0-2.54-1.088-2.54-2.424 0-1.336 1.139-2.423 2.54-2.423 1.4 0 2.54 1.087 2.54 2.423m-2.54-5.116c-2.97 0-5.386 2.295-5.386 5.116 0 2.821 2.416 5.116 5.386 5.116 2.969 0 5.385-2.295 5.385-5.116 0-2.821-2.416-5.116-5.385-5.116"></path><path fill="#FFF" d="M46.525 7.175h-2.339v11.012h6.52v-2.319h-4.181zm6.159 11.012h2.339V7.175h-2.339zm21.067-8.693V7.175h-6.882v11.012h6.882v-2.319h-4.544v-2.104h3.8v-2.319h-3.8V9.494zM63.035 7.175l-1.954 8.223-1.953-8.223h-2.467l3.01 11.012h2.821l3.009-11.012z"></path></g></svg>
+                    </a>
+                </h1>
+                <div class="link-area">
+                    <a href="">
+                        <span class="blind">네이버 쇼핑</span>
+                        <svg width="41" height="16" viewBox="0 0 41 16" fill="none" xmlns="http://www.w3.org/2000/svg" focusable="false" aria-hidden="false" role="img"><path fill-rule="evenodd" popular-rule="evenodd" d="M0 16h16V0H0v16ZM9.31 4.338H12v7.324H9.272l-2.58-3.791v3.791H4V4.338h2.728l2.58 3.79v-3.79ZM25.632 5.57c-.067.138-.222.311-.467.522a7.82 7.82 0 0 1-1 .705 47.62 47.62 0 0 1-2.548 1.482l-.61-.948c.498-.267.954-.518 1.368-.753.414-.235.828-.49 1.243-.765.282-.187.514-.365.696-.535.182-.17.325-.348.43-.535.102-.186.172-.39.21-.613.038-.223.056-.484.056-.784V2.4h1.243v.947c0 .3.017.561.05.784.033.223.103.43.211.62s.26.374.46.552c.199.179.468.377.808.595.39.252.779.486 1.168.705.39.219.829.458 1.318.717l-.596.935c-.465-.259-.917-.512-1.356-.759-.439-.247-.845-.488-1.218-.723a8.842 8.842 0 0 1-.981-.686c-.249-.207-.407-.378-.473-.516h-.012Zm5.258 4.823v1.02H20.373v-1.02h2.984V8.182h1.218v2.21h2.113v-2.21h1.218v2.21h2.984Z" fill="#333"></path><path d="M25.632 5.57v-.05H25.6l-.013.028.045.022Zm-.467.522-.032-.038.032.038Zm-1 .705-.026-.043.026.043Zm-1.156.698.025.043-.025-.043Zm-1.392.784-.042.027.025.039.04-.022-.023-.044Zm-.61-.948-.023-.044-.048.026.03.045.041-.027Zm2.61-1.518-.027-.042.028.042Zm.697-.535.034.037-.034-.037Zm.43-.535.043.025-.044-.025ZM25.01 2.4v-.05h-.05v.05h.05Zm1.242 0h.05v-.05h-.05v.05Zm.721 2.903.034-.037-.034.037Zm.808.595.027-.042-.027.042Zm1.168.705-.024.044.024-.044Zm1.318.717.042.027.03-.046-.049-.025-.023.044Zm-.596.935-.025.044.042.023.025-.04-.042-.027Zm-1.356-.759.025-.043-.025.043Zm-1.218-.723.027-.042-.027.042ZM25.644 5.57l.045-.022-.014-.028h-.031v.05Zm5.246 4.823h.05v-.05h-.05v.05Zm0 1.02v.05h.05v-.05h-.05Zm-10.517 0h-.05v.05h.05v-.05Zm0-1.02v-.05h-.05v.05h.05Zm2.984 0v.05h.05v-.05h-.05Zm0-2.211v-.05h-.05v.05h.05Zm1.218 0h.05v-.05h-.05v.05Zm0 2.21h-.05v.05h.05v-.05Zm2.113 0v.05h.05v-.05h-.05Zm0-2.21v-.05h-.05v.05h.05Zm1.218 0h.05v-.05h-.05v.05Zm0 2.21h-.05v.05h.05v-.05Zm-2.32-4.844c-.061.128-.21.296-.453.506l.065.076c.246-.211.407-.39.479-.539l-.09-.043Zm-.453.506a7.777 7.777 0 0 1-.994.7l.052.085c.424-.26.76-.496 1.007-.71l-.065-.075Zm-.994.7c-.365.227-.75.46-1.155.698l.05.086a56.46 56.46 0 0 0 1.158-.699l-.053-.085Zm-1.155.698c-.406.239-.87.5-1.391.783l.048.088c.522-.284.987-.546 1.393-.785l-.05-.086Zm-1.325.8-.61-.948-.084.054.61.948.084-.054Zm-.628-.877c.498-.267.954-.518 1.369-.753l-.05-.087c-.414.234-.869.485-1.366.752l.047.088Zm1.369-.753c.415-.236.83-.492 1.245-.768l-.055-.083c-.413.275-.826.53-1.24.764l.05.087Zm1.245-.767c.284-.188.519-.368.703-.54l-.068-.073c-.18.167-.41.344-.69.53l.055.083Zm.703-.54c.185-.173.332-.356.439-.547l-.087-.049c-.102.181-.241.355-.42.523l.068.073Zm.439-.547a1.96 1.96 0 0 0 .216-.63l-.098-.016a1.86 1.86 0 0 1-.206.597l.088.049Zm.216-.63c.039-.226.058-.49.058-.792h-.1c0 .298-.02.556-.056.776l.098.016Zm.058-.792V2.4h-.1v.947h.1Zm-.05-.897h1.242v-.1H25.01v.1Zm1.192-.05v.947h.1V2.4h-.1Zm0 .947c0 .302.017.566.05.791l.1-.014a5.37 5.37 0 0 1-.05-.777h-.1Zm.05.791c.034.229.107.441.218.637l.087-.049a1.726 1.726 0 0 1-.206-.602l-.099.014Zm.218.637c.11.196.267.385.47.565l.067-.074a2.156 2.156 0 0 1-.45-.54l-.087.05Zm.47.565c.201.181.473.381.814.6l.054-.084a6.376 6.376 0 0 1-.801-.59l-.067.074Zm.814.6c.39.252.78.487 1.17.707l.05-.087a22.6 22.6 0 0 1-1.166-.704l-.055.084Zm1.17.707c.39.219.83.458 1.32.717l.046-.088c-.488-.26-.927-.498-1.316-.716l-.05.087Zm1.3.646-.596.935.085.054.596-.935-.084-.054Zm-.529.918c-.464-.259-.916-.511-1.355-.758l-.05.087 1.356.759.05-.088Zm-1.355-.758a28.657 28.657 0 0 1-1.216-.722l-.053.085c.373.235.78.477 1.22.724l.049-.087Zm-1.217-.722a8.789 8.789 0 0 1-.975-.683l-.064.077c.25.209.58.439.987.691l.052-.085Zm-.975-.683c-.248-.206-.399-.372-.46-.5l-.09.044c.072.149.237.326.486.533l.064-.077Zm-.505-.527h-.012v.1h.012v-.1Zm5.196 4.873v1.02h.1v-1.02h-.1Zm.05.97H20.373v.1H30.89v-.1Zm-10.466.05v-1.02h-.1v1.02h.1Zm-.05-.97h2.983v-.1h-2.983v.1Zm3.033-.05V8.182h-.1v2.21h.1Zm-.05-2.161h1.218v-.1h-1.218v.1Zm1.168-.05v2.21h.1v-2.21h-.1Zm.05 2.26h2.113v-.1h-2.113v.1Zm2.163-.05v-2.21h-.1v2.21h.1Zm-.05-2.16h1.218v-.1h-1.218v.1Zm1.168-.05v2.21h.1v-2.21h-.1Zm.05 2.26h2.984v-.1h-2.984v.1Z" fill="#333"></path><path fill-rule="evenodd" popular-rule="evenodd" d="M39.338 8.353h1.173V1.587h-1.173v6.766Zm-2.13 1.276c-.336 0-.641.036-.916.106-.276.071-.511.165-.706.282a1.455 1.455 0 0 0-.45.393.76.76 0 0 0-.155.445v.35c0 .15.052.298.155.444.105.146.254.277.45.394.195.117.43.21.706.281.275.071.58.106.916.106.334 0 .64-.035.915-.106.275-.07.51-.164.706-.281.195-.117.345-.248.449-.394a.761.761 0 0 0 .156-.444v-.35a.761.761 0 0 0-.156-.445 1.454 1.454 0 0 0-.45-.393 2.685 2.685 0 0 0-.705-.282 3.689 3.689 0 0 0-.915-.106Zm-2.43-3.04h.825V3.252h-1.759V6.59h.934Zm2.43 6.854c-.527 0-1-.056-1.419-.168a3.54 3.54 0 0 1-1.065-.463 2.163 2.163 0 0 1-.67-.688 1.604 1.604 0 0 1-.234-.832v-.512c0-.3.078-.582.234-.845.155-.263.378-.492.67-.687a3.55 3.55 0 0 1 1.065-.463c.419-.113.892-.17 1.419-.17.526 0 .998.057 1.417.17.42.113.774.267 1.066.463.29.195.515.424.67.687.156.263.233.544.233.845v.512c0 .292-.077.567-.233.826-.155.258-.38.485-.67.682a3.68 3.68 0 0 1-1.066.468 5.288 5.288 0 0 1-1.417.175Zm-5.506-5.84V6.59h1.017V3.25h-.946V2.238h5.973v1.014h-1.017v3.301c.255-.016.5-.035.736-.056.235-.02.472-.052.712-.094l.096 1.013c-.432.075-.952.125-1.563.15-.61.025-1.282.038-2.016.038h-2.992Z" fill="#333"></path><path d="M39.338 8.353h-.05v.05h.05v-.05Zm1.173 0v.05h.05v-.05h-.05Zm0-6.766h.05v-.05h-.05v.05Zm-1.173 0v-.05h-.05v.05h.05Zm-3.046 8.148-.013-.048.013.048Zm-.706.282.025.043-.025-.043Zm-.45.393-.04-.029.04.03Zm0 1.239-.04.029.04-.029Zm.45.394.026-.043-.026.043Zm.706.281.012-.048-.012.048Zm1.831 0 .013.049-.013-.049Zm.706-.281.026.043-.026-.043Zm.449-.394.04.029-.04-.029Zm0-1.239.04-.028-.04.028Zm-.45-.393-.025.043.026-.043Zm-.705-.282.013-.048-.013.048Zm-2.52-3.145v.05h.05v-.05h-.05Zm0-3.34h.05V3.2h-.05v.05Zm-1.759 0V3.2h-.05v.05h.05Zm0 3.34h-.05v.05h.05v-.05Zm1.945 6.685-.013.048.013-.048Zm-1.735-1.15.043-.026-.043.025Zm0-2.19.043.026-.043-.026Zm1.735-1.15.013.048-.013-.048Zm2.836 0-.013.048.013-.048Zm1.066.463.028-.042-.028.042Zm.67.687-.043.026.043-.026Zm0 2.183-.043-.026.043.026Zm-.67.682.028.041-.028-.041Zm-1.066.468.014.049-.014-.049Zm-6.923-5.665h-.05v.05h.05v-.05Zm0-1.013v-.05h-.05v.05h.05Zm1.017 0v.05h.05v-.05h-.05Zm0-3.34h.05V3.2h-.05v.05Zm-.946 0h-.05v.05h.05v-.05Zm0-1.013v-.05h-.05v.05h.05Zm5.973 0h.05v-.05h-.05v.05Zm0 1.014v.05h.05v-.05h-.05Zm-1.017 0V3.2h-.05v.05h.05Zm0 3.301h-.05v.054l.053-.004-.003-.05Zm.736-.056.004.05-.004-.05Zm.712-.094.05-.005-.005-.053-.054.009.009.049Zm.096 1.013.008.05.046-.009-.005-.046-.05.005Zm-1.563.15.003.05-.002-.05Zm2.628.838h1.173v-.1h-1.173v.1Zm1.223-.05V1.587h-.1v6.766h.1Zm-.05-6.816h-1.173v.1h1.173v-.1Zm-1.223.05v6.766h.1V1.587h-.1Zm-2.08 7.992c-.34 0-.65.036-.929.108l.025.097c.27-.07.572-.105.904-.105v-.1Zm-.929.108a2.722 2.722 0 0 0-.719.287l.051.086c.19-.114.421-.206.693-.276l-.025-.097Zm-.719.287c-.2.119-.355.255-.464.407l.081.059c.1-.139.243-.266.434-.38l-.05-.086Zm-.464.408a.81.81 0 0 0-.165.473h.1a.71.71 0 0 1 .146-.416l-.081-.057Zm-.165.473v.35h.1v-.35h-.1Zm0 .35c0 .162.056.32.165.473l.081-.058a.71.71 0 0 1-.146-.415h-.1Zm.165.473c.109.153.264.288.464.408l.051-.086a1.412 1.412 0 0 1-.434-.38l-.081.058Zm.464.408c.2.12.44.215.72.287l.024-.097a2.62 2.62 0 0 1-.693-.276l-.05.086Zm.72.287c.279.072.589.107.928.107v-.1c-.332 0-.634-.034-.904-.104l-.025.097Zm.928.107c.338 0 .647-.035.928-.107l-.025-.097c-.271.07-.572.104-.903.104v.1Zm.928-.107c.278-.072.518-.167.718-.287l-.05-.086a2.63 2.63 0 0 1-.694.276l.026.097Zm.719-.287c.2-.12.355-.255.464-.408l-.082-.058a1.41 1.41 0 0 1-.434.38l.052.086Zm.464-.408a.811.811 0 0 0 .165-.473h-.1a.711.711 0 0 1-.147.415l.082.058Zm.165-.473v-.35h-.1v.35h.1Zm0-.35a.81.81 0 0 0-.166-.473l-.081.057a.712.712 0 0 1 .147.416h.1Zm-.166-.474a1.501 1.501 0 0 0-.464-.407l-.05.086c.19.114.334.241.433.38l.081-.059Zm-.463-.407c-.201-.12-.44-.215-.72-.287l-.024.097c.271.07.502.162.692.276l.052-.086Zm-.72-.287a3.739 3.739 0 0 0-.927-.108v.1c.33 0 .632.035.903.105l.024-.097ZM34.778 6.64h.825v-.1h-.825v.1Zm.875-.05V3.25h-.1v3.34h.1Zm-.05-3.39h-1.759v.1h1.76v-.1Zm-1.809.05v3.34h.1V3.25h-.1Zm.05 3.39h.934v-.1h-.934v.1Zm3.364 6.753c-.524 0-.992-.056-1.406-.166l-.026.096c.424.114.901.17 1.431.17v-.1Zm-1.406-.166a3.489 3.489 0 0 1-1.05-.457l-.056.083c.297.2.657.357 1.08.47l.026-.096Zm-1.05-.457a2.111 2.111 0 0 1-.655-.671l-.086.05c.16.27.388.505.685.704l.056-.083Zm-.655-.671a1.554 1.554 0 0 1-.227-.807h-.1c0 .302.08.588.24.858l.087-.052Zm-.227-.807v-.512h-.1v.512h.1Zm0-.512c0-.292.075-.564.227-.82l-.086-.05c-.16.27-.24.56-.24.87h.1Zm.227-.82c.15-.255.368-.479.655-.67l-.056-.084c-.297.2-.526.434-.685.704l.086.05Zm.655-.67a3.502 3.502 0 0 1 1.05-.457l-.026-.096c-.423.113-.783.27-1.08.47l.056.082Zm1.05-.457a5.417 5.417 0 0 1 1.406-.167v-.1c-.531 0-1.008.057-1.432.17l.026.097Zm1.406-.167c.522 0 .99.056 1.404.167l.026-.096a5.52 5.52 0 0 0-1.43-.171v.1Zm1.404.167c.416.112.765.264 1.051.456l.056-.083a3.607 3.607 0 0 0-1.08-.47l-.027.097Zm1.051.456c.286.192.504.416.655.672l.086-.051c-.16-.27-.389-.505-.685-.704l-.056.083Zm.655.672c.151.255.226.527.226.819h.1c0-.31-.08-.6-.24-.87l-.086.05Zm.226.819v.512h.1v-.512h-.1Zm0 .512c0 .283-.075.549-.226.8l.086.051c.16-.266.24-.55.24-.85h-.1Zm-.226.8c-.15.251-.37.473-.655.666l.056.083c.296-.2.525-.432.685-.698l-.086-.051Zm-.655.666a3.632 3.632 0 0 1-1.051.462l.027.097a3.73 3.73 0 0 0 1.08-.476l-.056-.083Zm-1.051.462a5.24 5.24 0 0 1-1.404.173v.1c.53 0 1.007-.058 1.43-.176l-.026-.097Zm-6.86-5.617V6.59h-.1v1.013h.1Zm-.05-.963h1.017v-.1h-1.017v.1Zm1.067-.05V3.25h-.1v3.34h.1Zm-.05-3.39h-.946v.1h.946v-.1Zm-.896.05V2.238h-.1v1.014h.1Zm-.05-.963h5.973v-.1h-5.973v.1Zm5.923-.05v1.014h.1V2.237h-.1Zm.05.964h-1.017v.1h1.017v-.1Zm-1.067.05v3.301h.1V3.251h-.1Zm.053 3.351c.255-.016.5-.035.737-.056l-.008-.1c-.236.021-.48.04-.736.057l.007.1Zm.737-.056c.237-.02.475-.053.716-.095l-.017-.098a8.582 8.582 0 0 1-.707.093l.008.1Zm.658-.14.096 1.014.1-.01-.096-1.013-.1.01Zm.137.96c-.428.074-.947.124-1.556.15l.005.1a12.276 12.276 0 0 0 1.568-.152l-.017-.098Zm-1.556.15c-.61.024-1.28.037-2.014.037v.1c.734 0 1.407-.013 2.019-.038l-.005-.1Zm-2.014.037h-2.992v.1h2.992v-.1Z" fill="#333"></path></svg>
+                    </a>
+                </div>
+                <div class="util-area">
+                    <a href="" class="link-calendar">
+                        <span class="blind">라이브 캘린더</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" focusable="false" aria-hidden="false" role="img"><g fill="#222" fill-rule="evenodd"><path fill-rule="nonzero" d="M18 0a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h16zm0 1.5H2a.5.5 0 0 0-.492.41L1.5 2v16a.5.5 0 0 0 .41.492L2 18.5h16a.5.5 0 0 0 .492-.41L18.5 18V2a.5.5 0 0 0-.41-.492L18 1.5z"></path><path d="M0 4.5h20V6H0z"></path><path fill-rule="nonzero" d="M12.97 8.97a.749.749 0 0 1 1.133.976l-.073.084-4.5 4.5a.75.75 0 0 1-.976.073l-.084-.073-2.5-2.5a.749.749 0 0 1 .976-1.133l.084.073L9 12.939l3.97-3.97z"></path></g></svg>
+                    </a>
+                    <a href="" class="link-search">
+                        <span class="blind">검색</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" focusable="false" aria-hidden="false" role="img"><g fill="#000" fill-rule="nonzero"><path d="M8.925 0a8.925 8.925 0 0 1 8.925 8.925 8.925 8.925 0 0 1-8.925 8.925A8.925 8.925 0 0 1 0 8.925 8.925 8.925 0 0 1 8.925 0zm0 1.5a7.425 7.425 0 1 0 0 14.85 7.425 7.425 0 0 0 0-14.85z"></path><path d="M14.554 14.554a.75.75 0 0 1 .977-.072l.084.072 4.937 4.938a.749.749 0 0 1-.976 1.133l-.084-.073-4.938-4.937a.749.749 0 0 1 0-1.06z"></path></g></svg>
+                    </a>
+                    <a href="" class="link-login">
+                        <span class="blind">로그인</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="21" viewBox="0 0 20 21" focusable="false" aria-hidden="false" role="img" aria-label="로그인" class="NavLink_icon_my_y54la"><defs><path id="person_svg__a" d="M0 10.5h20v10H0z"></path></defs><g fill="none" fill-rule="evenodd"><path fill="#222" d="M10 0a6 6 0 100 12 6 6 0 000-12m0 1.5c2.482 0 4.5 2.019 4.5 4.5 0 2.482-2.018 4.5-4.5 4.5A4.505 4.505 0 015.5 6c0-2.481 2.019-4.5 4.5-4.5"></path><mask id="person_svg__b" fill="#fff"><use xlink:href="#person_svg__a"></use></mask><path fill="#222" d="M1.009 20.5c.26 0 .47-.2.497-.46C1.965 15.529 5.594 12 10 12c4.407 0 8.036 3.528 8.495 8.04.026.26.236.46.497.46h.505a.5.5 0 00.502-.537c-.501-5.31-4.78-9.463-9.999-9.463-5.218 0-9.497 4.152-9.998 9.463a.5.5 0 00.502.537h.505z" mask="url(#person_svg__b)"></path></g></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <nav class="group-nav">
+            <ul class="gnb-list">
+                <li class="gnb-item active"><a href="./index.html" class="link-gnb"><span>홈</span></a></li>
+                <li class="gnb-item"><a href="./event.html" class="link-gnb"><span>이벤트</span></a></li>
+                <li class="gnb-item"><a href="./cate.html" class="link-gnb"><span>카테고리</span></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="home" class="container">
+        <!-- SC-HOT -->
+        <section class="section hot">
+            <div class="common-inner">
+                <div class="group-title">
+                    <h2 class="headline">화제의 라이브 속으로</h2>
+                </div>
+                <div class="group-tab">
+                    <div class="menu-area">
+                        <ul role="tablist" id="liveList1" class="live-list">
+                            <!-- ... -->
+                        </ul>
+                    </div>
+                    <div role="tabpanel" id="liveMain1" class="content-area">
+                        <!-- ... -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- SC-CATE -->
+        <section class="sc-cate">
+            <h2 class="blind">카테고리</h2>
+            <div class="common-inner">
+                <div class="swiper cate-slide">
+                    <nav class="swiper-wrapper">
+                        <ul class="swiper-slide cate-list">
+                            <li class="cate-item">
+                                <a href="" class="link-cate all"><span class="text-box">전체</span></a>
+                            </li>
+                            <li class="cate-item">
+                                <a href="" class="link-cate beauty"><span class="text-box">뷰티</span></a>
+                            </li>
+                            <li class="cate-item">
+                                <a href="" class="link-cate food"><span class="text-box">푸드</span></a>
+                            </li>
+                            <li class="cate-item">
+                                <a href="" class="link-cate fashion"><span class="text-box">패션</span></a>
+                            </li>
+                            <li class="cate-item">
+                                <a href="" class="link-cate life"><span class="text-box">라이프</span></a>
+                            </li>
+                            <li class="cate-item">
+                                <a href="" class="link-cate trip"><span class="text-box">여행/체험</span></a>
+                            </li>
+                            <li class="cate-item">
+                                <a href="" class="link-cate kids"><span class="text-box">키즈</span></a>
+                            </li>
+                            <li class="cate-item">
+                                <a href="" class="link-cate tech"><span class="text-box">테크</span></a>
+                            </li>
+                        </ul>
+                        <ul class="swiper-slide cate-list">
+                            <li class="cate-item">
+                                <a href="" class="link-cate hobby"><span class="text-box">취미레저</span></a>
+                            </li>
+                            <li class="cate-item">
+                                <a href="" class="link-cate culture"><span class="text-box">문화생활</span></a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+        <!-- SECTION CHANCE -->
+        <section class="section chance">
+            <div class="common-inner">
+                <div class="group-title">
+                    <h2 class="headline">바로 지금! 라이브찬스</h2>
+                </div>
+            </div>
+            <div class="swiper group-slide">
+                <ul class="swiper-wrapper product-list">
+                    <li class="swiper-slide product-item">
+                        <div class="img-area">
+                            <a href="">
+                                <div class="img-box"><img src="./assets/images/product1.jpg" alt="케이투 남성 등산화"></div>
+                            </a>
+                        </div>
+                        <div class="text-area">
+                            <strong class="title"><a href="">예쁜 신발 편안한 신발</a></strong>
+                            <a href="" class="market">총알닷컴</a>
+                            <div class="product-box">
+                                <a href="">
+                                    <div class="img">
+                                        <img src="./assets/images/product1s.jfif">
+                                    </div>
+                                    <div class="info">
+                                        <span class="title">미끄럼방지 남자 등산화 기능성 신발</span>
+                                        <div class="info-wrap">
+                                            <em class="discount">27%</em>
+                                            <em class="price"><strong>39,800</strong>원</em>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="swiper-slide product-item">
+                        <div class="img-area">
+                            <a href="">
+                                <div class="img-box"><img src="./assets/images/product2.jpg" alt="베타랩 올인원 쉐이크"></div>
+                            </a>
+                        </div>
+                        <div class="text-area">
+                            <strong class="title"><a href="">베타랩의 쇼핑라이브</a></strong>
+                            <a href="" class="market">베타랩</a>
+                            <div class="product-box">
+                                <a href="">
+                                    <div class="img">
+                                        <img src="./assets/images/product2s.png">
+                                    </div>
+                                    <div class="info">
+                                        <span class="title">베타랩 탄단지 다이어트 식품 올인원패키지 쉐이크 5일단식 FMD 방탄두유 당뇨</span>
+                                        <div class="info-wrap">
+                                            <em class="discount">34%</em>
+                                            <em class="price"><strong>39,900</strong>원</em>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="swiper-slide product-item">
+                        <a href="" class="link-more">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="28" focusable="false" aria-hidden="true"><g fill="none"><circle cx="13" cy="14" r="13" fill="#929294"></circle><path stroke="#FFF" d="m14 9.5 4 4.5-4 4.5m4-4.5H7"></path></g></svg>
+                            <span>더보기</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- SECTION POPULAR -->
+        <section class="section popular">
+            <div class="common-inner">
+                <div class="group-title">
+                    <h2 class="headline">인기 급상승 숏클립<svg width="20" height="10" viewBox="0 0 20 10" fill="none" xmlns="http://www.w3.org/2000/svg" focusable="false" aria-hidden="false" role="img" aria-label="베타"><path fill-rule="evenodd" clip-rule="evenodd" d="M3.43 3.056h-.464l-.162.738h.582c.345 0 .627.124.847.374.22.25.329.578.329.985 0 .288-.043.552-.13.791a2.114 2.114 0 0 1-.345.622 1.52 1.52 0 0 1-1.186.548c-.28 0-.523-.067-.728-.2-.205-.134-.394-.359-.566-.675L2.685 2.37c.159-.54.354-.94.588-1.196.234-.257.512-.385.836-.385.273 0 .498.083.674.248a.824.824 0 0 1 .264.627c0 .169-.043.344-.13.527a1.576 1.576 0 0 1-.355.485c-.151.133-.313.23-.486.29-.172.06-.388.089-.647.089ZM2.728.543c-.367.362-.647.908-.842 1.639L0 9h.863l.55-2.024c.237.317.478.538.722.665.245.126.529.19.852.19.331 0 .644-.07.938-.206a2.36 2.36 0 0 0 .766-.564 2.71 2.71 0 0 0 .513-.843 2.86 2.86 0 0 0 .188-1.044c0-.274-.043-.535-.13-.785a1.335 1.335 0 0 0-.388-.595 3.624 3.624 0 0 0-.485-.316c.518-.19.888-.43 1.111-.722.223-.291.335-.659.335-1.101 0-.5-.157-.9-.47-1.202C5.052.151 4.637 0 4.119 0c-.56 0-1.024.181-1.39.543ZM14.34 2.256c-.207.004-.415.005-.62.005.047-.298.094-.574.141-.83.048-.254.114-.52.2-.8l-.993.14a46.2 46.2 0 0 1-.067.68c-.026.255-.067.525-.118.81h-.671l-.099.615h.671l-.578 3.635a1.85 1.85 0 0 0-.012.59c.029.17.094.304.195.403a.74.74 0 0 0 .373.249 1.959 1.959 0 0 0 .811.065c.088-.01.181-.025.281-.045a14.597 14.597 0 0 0 .461-.109l-.005-.546a3.49 3.49 0 0 1-.614.089c-.173.006-.31-.024-.41-.09a.452.452 0 0 1-.214-.308c-.035-.145-.031-.35.011-.616l.528-3.317c.172.001.357.002.557.005.199.004.411.013.636.026l.274-.686c-.285.02-.53.032-.738.035Zm-4.044 1.528c.023.222.013.472-.032.75L7.54 4.533c.048-.298.12-.558.217-.78a1.99 1.99 0 0 1 .37-.571c.14-.145.3-.258.482-.338.181-.079.382-.118.602-.118.227 0 .417.043.569.129.151.086.273.206.367.358.077.159.127.35.151.571ZM7.394 5.377l.041-.258 3.646.001.014-.09c.077-.482.097-.908.059-1.275-.039-.368-.13-.674-.277-.92a1.507 1.507 0 0 0-.626-.546A2.16 2.16 0 0 0 9.31 2.1c-.35 0-.683.07-.993.208-.312.14-.59.335-.838.586a3.48 3.48 0 0 0-.641.914c-.173.35-.292.734-.358 1.151-.066.411-.075.79-.027 1.138.048.347.159.647.332.898.166.259.397.46.694.601.298.143.667.214 1.108.214.351.001.711-.056 1.08-.168a3.32 3.32 0 0 0 .938-.437l-.243-.486a2.75 2.75 0 0 1-.658.332 2.607 2.607 0 0 1-.85.124 2.28 2.28 0 0 1-.748-.11 1.055 1.055 0 0 1-.493-.337c-.121-.146-.2-.333-.236-.562a2.57 2.57 0 0 1 .017-.79Zm11.542-.393c-.069 0-.157-.005-.266-.015a3.1 3.1 0 0 0-.204-.015c-.33 0-.623.023-.879.07-.255.046-.47.118-.644.218-.18.099-.322.226-.422.382-.1.156-.168.34-.201.551a1.255 1.255 0 0 0-.003.437.593.593 0 0 0 .153.308c.069.086.167.15.294.194.127.043.28.064.46.064a1.765 1.765 0 0 0 1.133-.406c.115-.093.23-.205.348-.337l.231-1.45Zm.984 2.314-.625.557a1.118 1.118 0 0 1-.374-.278.849.849 0 0 1-.21-.468c-.13.12-.271.224-.426.314-.155.088-.31.163-.464.223a3.07 3.07 0 0 1-.494.148c-.16.033-.313.05-.457.05-.268 0-.51-.032-.723-.095a1.113 1.113 0 0 1-.515-.303.956.956 0 0 1-.284-.487 1.683 1.683 0 0 1-.015-.685c.05-.311.15-.586.301-.824a1.97 1.97 0 0 1 .619-.606c.252-.158.557-.281.915-.367a5.403 5.403 0 0 1 1.25-.129l.64.001.06-.378c.035-.218.042-.4.02-.546a.88.88 0 0 0-.133-.367.655.655 0 0 0-.305-.19 1.598 1.598 0 0 0-.47-.06c-.166 0-.325.014-.477.04-.153.027-.3.06-.445.1a4.307 4.307 0 0 0-.447.183 6.11 6.11 0 0 0-.457.244l-.275-.607c.18-.099.372-.191.576-.278.202-.085.413-.158.628-.218a4.454 4.454 0 0 1 1.196-.178c.316 0 .579.039.787.115.208.076.372.197.49.362.11.173.174.393.19.66.015.27-.008.595-.069.98l-.287 1.737c-.01.066-.023.132-.037.198a3.95 3.95 0 0 0-.036.2l-.008.163-.001.02a.643.643 0 0 0 .013.174c.027.179.06.3.098.362a.93.93 0 0 0 .251.233Z" fill="#929294"></path></svg></h2>
+                    <div class="button-area">
+                        <button type="button" class="btn-guide">
+                            <span class="blind">안내</span>
+                            <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" focusable="false" aria-hidden="true" class="GuideButton_icon_xFrXT"><circle cx="7.5" cy="7.5" r="7" stroke="#333"></circle><path fill-rule="evenodd" clip-rule="evenodd" d="M8.297 3.691a.81.81 0 0 1-.797.82.81.81 0 0 1-.797-.82c0-.457.358-.826.797-.826.44 0 .797.37.797.826Zm-.17 1.928V12H6.873V5.62h1.254Z" fill="#333"></path></svg>
+                        </button>
+                        <div class="button-wrap">
+                            <button class="btn-close">
+                                <span class="blind">닫기</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none" focusable="false" aria-hidden="true"><path fill="#929294" d="M.707 0l12.529 12.528-.708.708L0 .707z"></path><path fill="#929294" d="M12.707 0L.18 12.529l.707.707L13.414.707z"></path></svg>
+                            </button>
+                            <p class="desc">
+                                최근 3일간의 숏클립 기준 조회수의 증가율,
+                                인기도를 분석하여 제공합니다. 조회수가 더
+                                높은 숏클립이 낮은 숏클립보다 하위 순위에
+                                전시될 수 있습니다.
+                            </p>
+                        </div>
+                    </div>
+                    <span class="time">2월 7일 오전 5시 30분 기준</span>
+                </div>
+            </div>
+            <div class="swiper group-slide">
+                <ul id="popularList" class="swiper-wrapper popular-list">
+                    <!-- ... -->
+                </ul>
+            </div>
+        </section>
+        <!-- SC-TYPE  -->
+        <section class="section type">
+            <h2 class="blind">테마별 숏클립</h2>
+            <div class="swiper group-menu">
+                <ul role="tablist" class="swiper-wrapper menu-list">
+                    <li class="swiper-slide menu-item">
+                        <a href="" role="tab" aria-selected="true" class="menu" data-sort="1">원더랜드페스타</a>
+                    </li>
+                    <li class="swiper-slide menu-item">
+                        <a href="" role="tab" aria-selected="false" class="menu" data-sort="2">오늘만 핫딜</a>
+                    </li>
+                    <li class="swiper-slide menu-item">
+                        <a href="" role="tab" aria-selected="false" class="menu" data-sort="3">숏클리버</a>
+                    </li>
+                    <li class="swiper-slide menu-item">
+                        <a href="" role="tab" aria-selected="false" class="menu" data-sort="4">뷰티</a>
+                    </li>
+                    <li class="swiper-slide menu-item">
+                        <a href="" role="tab" aria-selected="false" class="menu" data-sort="5">키즈</a>
+                    </li>
+                    <li class="swiper-slide menu-item">
+                        <a href="" role="tab" aria-selected="false" class="menu" data-sort="6">백화점/아울렛</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="common-inner">
+                <div class="group-content">
+                    <ul id="typeLive" class="content-list" role="tabpanel">
+                        <!-- ... -->
+                    </ul>
+                    <button type="button" class="btn-next">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" focusable="false" aria-hidden="false" role="img" class="RoundMoreButton_icon_refresh_o2D8B" aria-label="새로고침"><path fill-rule="evenodd" clip-rule="evenodd" d="M8 0 4.855 2.74a.348.348 0 0 0-.101.243c0 .095.039.18.1.244L8 5.967v-2.27c3.075 0 5.577 2.439 5.577 5.438 0 2.998-2.502 5.438-5.577 5.438-3.076 0-5.577-2.44-5.577-5.438 0-1.47.603-2.803 1.578-3.783l-1.09-.949C1.706 5.636.96 7.301.96 9.135.96 12.92 4.118 16 8 16c3.881 0 7.04-3.08 7.04-6.865 0-3.786-3.159-6.865-7.04-6.865V0Z" fill="#929294"></path></svg>
+                        <span class="text">다음 숏클립 보기</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+        <!-- SECTION PRODUCT -->
+        <section class="section product">
+            <div class="common-inner">
+                <div class="group-title">
+                    <h2 class="headline">쇼핑라이브 인기 상품</h2>
+                    <div class="button-area">
+                        <button type="button" class="btn-guide">
+                            <span class="blind">안내</span>
+                            <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" focusable="false" aria-hidden="true" class="GuideButton_icon_xFrXT"><circle cx="7.5" cy="7.5" r="7" stroke="#333"></circle><path fill-rule="evenodd" clip-rule="evenodd" d="M8.297 3.691a.81.81 0 0 1-.797.82.81.81 0 0 1-.797-.82c0-.457.358-.826.797-.826.44 0 .797.37.797.826Zm-.17 1.928V12H6.873V5.62h1.254Z" fill="#333"></path></svg>
+                        </button>
+                        <div class="button-wrap">
+                            <button class="btn-close">
+                                <span class="blind">닫기</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none" focusable="false" aria-hidden="true"><path fill="#929294" d="M.707 0l12.529 12.528-.708.708L0 .707z"></path><path fill="#929294" d="M12.707 0L.18 12.529l.707.707L13.414.707z"></path></svg>
+                            </button>
+                            <p class="desc">
+                                최근 3일간의 숏클립 기준 조회수의 증가율,
+                                인기도를 분석하여 제공합니다. 조회수가 더
+                                높은 숏클립이 낮은 숏클립보다 하위 순위에
+                                전시될 수 있습니다.
+                            </p>
+                        </div>
+                    </div>
+                    <a href="" class="link-more">
+                        <span>더보기</span>
+                        <svg width="17" height="17" viewBox="0 0 76 152" fill="none" xmlns="http://www.w3.org/2000/svg" focusable="false" aria-hidden="true" class="TextMoreButton_icon_FLnGe"><path d="M19.176 123.157c.457-.148.853-.544 1.645-1.336l43.557-43.557c.792-.792 1.188-1.188 1.337-1.645a2 2 0 0 0 0-1.236c-.149-.457-.545-.853-1.337-1.645L20.821 30.181c-.792-.792-1.188-1.188-1.645-1.337a2 2 0 0 0-1.236 0c-.457.149-.853.545-1.645 1.337l-1.13 1.131c-.793.792-1.189 1.188-1.337 1.645a2 2 0 0 0 0 1.236c.148.457.544.853 1.336 1.645L55.327 76l-40.163 40.163c-.792.792-1.188 1.188-1.336 1.645a2 2 0 0 0 0 1.236c.148.456.544.852 1.336 1.644l1.132 1.132c.792.792 1.188 1.188 1.644 1.336.402.131.835.131 1.236 0Z" fill="#767678"></path></svg>
+                    </a>
+                </div>
+                <ul class="item-list">
+                    <li class="item-item">
+                        <a href="">
+                            <div class="img-area">
+                                <img src="./assets/images/hotitem1.jfif" alt="오나미 비움 KF94 마스크 새부리형">
+                            </div>
+                            <div class="text-area">
+                                <div class="info-wrap">
+                                    <em class="discount">32%</em>
+                                    <span class="price"><strong>4,000</strong>원</span>
+                                </div>
+                                <div class="title-wrap">
+                                    <p class="title">KF94 마스크 새부리형 비움 라이트핏 25매 컬러 오나미</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="item-item">
+                        <a href="">
+                            <div class="img-area">
+                                <img src="./assets/images/hotitem2.jpg" alt="글리터 스니커즈">
+                            </div>
+                            <div class="text-area">
+                                <div class="info-wrap">
+                                    <em class="discount">18%</em>
+                                    <span class="price"><strong>12,000</strong>원</span>
+                                </div>
+                                <div class="title-wrap">
+                                    <p class="title">가로수 글리터 스니커즈 운동화</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="item-item">
+                        <a href="">
+                            <div class="img-area">
+                                <img src="./assets/images/hotitem3.jpg" alt="유토렉스 코드블랙 칫솔살균기">
+                            </div>
+                            <div class="text-area">
+                                <div class="info-wrap">
+                                    <em class="discount">42%</em>
+                                    <span class="price"><strong>49,900</strong>원</span>
+                                </div>
+                                <div class="title-wrap">
+                                    <p class="title">유토렉스 코드블랙 더블케어 칫솔살균기 블랙미러 UV 히팅건조 칫솔전체살균 UTC-83UV</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="item-item">
+                        <a href="">
+                            <div class="img-area">
+                                <img src="./assets/images/hotitem4.jpg" alt="닭가슴살 그릴맛 3kg">
+                            </div>
+                            <div class="text-area">
+                                <div class="info-wrap">
+                                    <em class="discount">30%</em>
+                                    <span class="price"><strong>32,000</strong>원</span>
+                                </div>
+                                <div class="title-wrap">
+                                    <p class="title">닭가슴살 냉장 스팀 그릴맛 3kg (100g 30팩)</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="item-item">
+                        <a href="">
+                            <div class="img-area">
+                                <img src="./assets/images/hotitem5.jpg" alt="핫슈트 다이어트 땀복 자켓">
+                            </div>
+                            <div class="text-area">
+                                <div class="info-wrap">
+                                    <em class="discount">32%</em>
+                                    <span class="price"><strong>49,000</strong>원</span>
+                                </div>
+                                <div class="title-wrap">
+                                    <p class="title">핫슈트 다이어트 땀복 지투 풀지퍼 자켓 블랙 HT6008</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="item-item">
+                        <a href="">
+                            <div class="img-area">
+                                <img src="./assets/images/hotitem6.jpg" alt="메르베 신생아 무릎보호대">
+                            </div>
+                            <div class="text-area">
+                                <div class="info-wrap">
+                                    <em class="discount">50%</em>
+                                    <span class="price"><strong>10,800</strong>원</span>
+                                </div>
+                                <div class="title-wrap">
+                                    <p class="title">메르베 신생아 아기 베이비 유아 백일 돌 매쉬 무릎보호대 (성장판/기는아기/걸음마)</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+                <button type="button" class="btn-next">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" focusable="false" aria-hidden="false" role="img" class="RoundMoreButton_icon_refresh_o2D8B" aria-label="새로고침"><path fill-rule="evenodd" clip-rule="evenodd" d="M8 0 4.855 2.74a.348.348 0 0 0-.101.243c0 .095.039.18.1.244L8 5.967v-2.27c3.075 0 5.577 2.439 5.577 5.438 0 2.998-2.502 5.438-5.577 5.438-3.076 0-5.577-2.44-5.577-5.438 0-1.47.603-2.803 1.578-3.783l-1.09-.949C1.706 5.636.96 7.301.96 9.135.96 12.92 4.118 16 8 16c3.881 0 7.04-3.08 7.04-6.865 0-3.786-3.159-6.865-7.04-6.865V0Z" fill="#929294"></path></svg>
+                    <span class="text">인기 상품 보기</span>
+                    <span class="count"><span>1</span> / 5</span>
+                </button>
+            </div>
+        </section>
+        <!-- SECTION NOTICE -->
+        <section class="section notice">
+            <div class="common-inner">
+                <div class="group-title">
+                    <h2 class="headline">라이브 예고</h2>
+                    <a href="" class="link-more">
+                        <span>더보기</span>
+                        <svg width="17" height="17" viewBox="0 0 76 152" fill="none" xmlns="http://www.w3.org/2000/svg" focusable="false" aria-hidden="true" class="TextMoreButton_icon_FLnGe"><path d="M19.176 123.157c.457-.148.853-.544 1.645-1.336l43.557-43.557c.792-.792 1.188-1.188 1.337-1.645a2 2 0 0 0 0-1.236c-.149-.457-.545-.853-1.337-1.645L20.821 30.181c-.792-.792-1.188-1.188-1.645-1.337a2 2 0 0 0-1.236 0c-.457.149-.853.545-1.645 1.337l-1.13 1.131c-.793.792-1.189 1.188-1.337 1.645a2 2 0 0 0 0 1.236c.148.457.544.853 1.336 1.645L55.327 76l-40.163 40.163c-.792.792-1.188 1.188-1.336 1.645a2 2 0 0 0 0 1.236c.148.456.544.852 1.336 1.644l1.132 1.132c.792.792 1.188 1.188 1.644 1.336.402.131.835.131 1.236 0Z" fill="#767678"></path></svg>
+                    </a>
+                </div>
+                <ul class="notice-list">
+                    <li class="notice-item">
+                        <div class="img-area">
+                            <a href="" class="link-notice">
+                                <time class="time-box">
+                                    <em class="date">2월 27일</em>
+                                    <em class="time">19:30</em>
+                                </time>
+                                <div class="img-box">
+                                    <img src="./assets/images/notice1.jpg">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="text-area">
+                            <a href="">
+                                <p class="title">[블루밍데이즈] 시크헤라 봄 신상 첫 라방</p>
+                                <em class="event">소식받기 1천원 할인 쿠폰</em>
+                                <div class="product-box">
+                                    <div class="img-wrap">
+                                        <img src="./assets/images/notice_s1.jfif">
+                                    </div>
+                                    <div class="text-wrap">
+                                        <p class="title">[시크헤라] 레티카에스닉블라우스-388933</p>
+                                        <div class="info-wrap">
+                                            <em class="discount">24%</em>
+                                            <em class="price"><strong>42,000</strong>원</em>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="" class="market">시크헤라</a>
+                            <button class="btn-alarm">
+                                <svg width="15" height="15" viewBox="0 0 15 15" xmlns="https://www.w3.org/2000/svg" focusable="false" aria-hidden="true" class="LiveNoticeButton_icon_inactive_DGdgc"><path d="M14.927 9.437h-2.188V7.25h-1.042v2.187H9.51v1.042h2.187v2.188h1.042v-2.188h2.188V9.437Zm-8.542 4.271a2.284 2.284 0 0 1-1.922-1.042h3.844a2.284 2.284 0 0 1-1.922 1.042Zm4.27-1.042v-.833H1.052l.699-1.255a.418.418 0 0 0 .052-.203V6.416a4.589 4.589 0 0 1 4.583-4.583 4.59 4.59 0 0 1 4.579 4.375h.834A5.424 5.424 0 0 0 6.385 1 5.423 5.423 0 0 0 .968 6.416v3.85l-.903 1.628a.522.522 0 0 0 .456.772h3a3.115 3.115 0 0 0 2.864 1.875 3.115 3.115 0 0 0 2.865-1.875h1.406Z" fill="#F2312E"></path></svg>
+                                <span>알림받기</span>
+                            </button>
+                        </div>
+                    </li>
+                    <li class="notice-item">
+                        <div class="img-area">
+                            <a href="" class="link-notice">
+                                <time class="time-box">
+                                    <em class="date">3월 28일</em>
+                                    <em class="time">14:00</em>
+                                </time>
+                                <div class="img-box">
+                                    <img src="./assets/images/notice2.jpg">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="text-area">
+                            <a href="">
+                                <p class="title">브람스 루카 부모님 선물 추천, 가성비 안마 의자</p>
+                                <em class="event">쿠폰 할인 추가</em>
+                                <div class="product-box">
+                                    <div class="img-wrap">
+                                        <img src="./assets/images/notice_s2.jpg">
+                                    </div>
+                                    <div class="text-wrap">
+                                        <p class="title">[오늘만라이브특가] 브람스 루카 안마 의자 BRAMS-S3500</p>
+                                        <div class="info-wrap">
+                                            <em class="discount">68%</em>
+                                            <em class="price"><strong>1,249,000</strong>원</em>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="" class="market">앱스토리몰</a>
+                            <button class="btn-alarm">
+                                <svg width="15" height="15" viewBox="0 0 15 15" xmlns="https://www.w3.org/2000/svg" focusable="false" aria-hidden="true"><path d="M14.927 9.437h-2.188V7.25h-1.042v2.187H9.51v1.042h2.187v2.188h1.042v-2.188h2.188V9.437Zm-8.542 4.271a2.284 2.284 0 0 1-1.922-1.042h3.844a2.284 2.284 0 0 1-1.922 1.042Zm4.27-1.042v-.833H1.052l.699-1.255a.418.418 0 0 0 .052-.203V6.416a4.589 4.589 0 0 1 4.583-4.583 4.59 4.59 0 0 1 4.579 4.375h.834A5.424 5.424 0 0 0 6.385 1 5.423 5.423 0 0 0 .968 6.416v3.85l-.903 1.628a.522.522 0 0 0 .456.772h3a3.115 3.115 0 0 0 2.864 1.875 3.115 3.115 0 0 0 2.865-1.875h1.406Z" fill="#F2312E"></path></svg>
+                                <span>알림받기</span>
+                            </button>
+                        </div>
+                    </li>
+                    <li class="notice-item">
+                        <div class="img-area">
+                            <a href="" class="link-notice">
+                                <time class="time-box">
+                                    <em class="date">3월 29일</em>
+                                    <em class="time">13:30</em>
+                                </time>
+                                <div class="img-box">
+                                    <img src="./assets/images/notice3.jpg">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="text-area">
+                            <a href="">
+                                <p class="title">[도드람한돈] 삼겹살/목살 특별가</p>
+                                <em class="event">민생 물가! ㅁㅊㄷ ㅁㅊㅇ</em>
+                                <div class="product-box">
+                                    <div class="img-wrap">
+                                        <img src="./assets/images/notice_s3.jpg">
+                                    </div>
+                                    <div class="text-wrap">
+                                        <p class="title">도드람한돈 냉장 삼겹살 구이용 500g</p>
+                                        <div class="info-wrap">
+                                            <em class="discount">10%</em>
+                                            <em class="price"><strong>11,500</strong>원</em>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="" class="market">신세계라이브쇼핑</a>
+                            <button class="btn-alarm">
+                                <svg width="15" height="15" viewBox="0 0 15 15" xmlns="https://www.w3.org/2000/svg" focusable="false" aria-hidden="true"><path d="M14.927 9.437h-2.188V7.25h-1.042v2.187H9.51v1.042h2.187v2.188h1.042v-2.188h2.188V9.437Zm-8.542 4.271a2.284 2.284 0 0 1-1.922-1.042h3.844a2.284 2.284 0 0 1-1.922 1.042Zm4.27-1.042v-.833H1.052l.699-1.255a.418.418 0 0 0 .052-.203V6.416a4.589 4.589 0 0 1 4.583-4.583 4.59 4.59 0 0 1 4.579 4.375h.834A5.424 5.424 0 0 0 6.385 1 5.423 5.423 0 0 0 .968 6.416v3.85l-.903 1.628a.522.522 0 0 0 .456.772h3a3.115 3.115 0 0 0 2.864 1.875 3.115 3.115 0 0 0 2.865-1.875h1.406Z" fill="#F2312E"></path></svg>
+                                <span>알림받기</span>
+                            </button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- SECTION TREND -->
+        <section class="section trend">
+            <div class="common-inner">
+                <div class="group-title">
+                    <h2 class="headline">요즘 대세! 인기라이브</h2>
+                    <div class="button-area">
+                        <button type="button" class="btn-guide">
+                            <span class="blind">안내</span>
+                            <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" focusable="false" aria-hidden="true" class="GuideButton_icon_xFrXT"><circle cx="7.5" cy="7.5" r="7" stroke="#333"></circle><path fill-rule="evenodd" clip-rule="evenodd" d="M8.297 3.691a.81.81 0 0 1-.797.82.81.81 0 0 1-.797-.82c0-.457.358-.826.797-.826.44 0 .797.37.797.826Zm-.17 1.928V12H6.873V5.62h1.254Z" fill="#333"></path></svg>
+                        </button>
+                        <div class="button-wrap">
+                            <button class="btn-close">
+                                <span class="blind">닫기</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none" focusable="false" aria-hidden="true"><path fill="#929294" d="M.707 0l12.529 12.528-.708.708L0 .707z"></path><path fill="#929294" d="M12.707 0L.18 12.529l.707.707L13.414.707z"></path></svg>
+                            </button>
+                            <p class="desc">
+                                최근 3일간의 숏클립 기준 조회수의 증가율,
+                                인기도를 분석하여 제공합니다. 조회수가 더
+                                높은 숏클립이 낮은 숏클립보다 하위 순위에
+                                전시될 수 있습니다.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="select-area">
+                        <button type="button" class="btn-sort">
+                            <span>시청순</span>
+                            <svg width="7" height="12" viewBox="0 0 7 13" fill="none" xmlns="http://www.w3.org/2000/svg" focusable="false" aria-hidden="true"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.222 6.5.112 1.39.888.61l5.89 5.89-5.89 5.888-.778-.778 5.111-5.11Z" fill="#767678"></path></svg>
+                        </button>
+                        <div class="btn-wrap">
+                            <a href="" role="option" aria-selected="true">시청순</a>
+                            <a href="" role="option" aria-selected="false">구매순</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper group-menu">
+                <ul class="swiper-wrapper menu-list" role="tablist">
+                    <li class="swiper-slide menu-item">
+                        <a href="" role="tab" aria-selected="true" class="menu" data-sort="all">
+                            <svg width="25" height="25" viewBox="0 0 25 25" xmlns="http://www.w3.org/2000/svg" focusable="false" aria-hidden="true" class="RoundItem_svg_all_WZH-x"><g fill="none" fill-rule="evenodd"><circle fill= "#F4F4F4" cx="12.5" cy="12.5" r="8.5"></circle><path d="m7.959 15 .304-1.07h1.442l.301 1.07h1.203l-1.493-4.665H8.335L6.83 15h1.128zm1.06-3.654.485 1.767H8.472l.495-1.767h.051zm5.61 2.71h-1.87v-3.721h-1.131V15h3.001v-.943zm3.505 0h-1.87v-3.721h-1.13V15h3v-.943z" fill="#929242" fill-rule="nonzero"></path></g></svg>
+                            <span>전체</span>
+                        </a>
+                    </li>
+                    <li class="swiper-slide menu-item">
+                        <a href="" role="tab" aria-selected="false" class="menu" data-sort="1">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 50 50" fill="none" class="RoundItem_svg_zjf33" data-src="https://im.pstatic.net/selective/category/svg/1649053624457_icon_beauty.svg" xmlns:xlink="http://www.w3.org/1999/xlink" focusable="false" aria-hidden="true">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M10 20.2675V13.9815C10 13.2826 10.3648 12.6344 10.9622 12.2718L14.9622 9.84384C16.2951 9.03482 18 9.99437 18 11.5535V20.2675C18.5978 20.6134 19 21.2597 19 22V39C19 40.1045 18.1046 41 17 41H11C9.89543 41 9 40.1045 9 39V22C9 21.2597 9.4022 20.6134 10 20.2675ZM12 13.9815L16 11.5535L16 20H12V13.9815ZM11 22V25.5625H17V22H11ZM11 27.5625H17V39H11L11 27.5625Z" fill="#929294"></path>
+                                <path d="M33.2929 22.2929L26.2929 29.2929L27.7071 30.7071L34.7071 23.7071L33.2929 22.2929Z" fill="#929294"></path>
+                                <path d="M31.2929 30.2929L34.2929 27.2929L35.7071 28.7071L32.7071 31.7071L31.2929 30.2929Z" fill="#929294"></path>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M24 35C22.8954 35 22 35.8954 22 37C22 39.2091 23.7909 41 26 41H37C39.2091 41 41 39.2091 41 37C41 35.8954 40.1046 35 39 35H38.8485C40.7933 33.0942 42 30.438 42 27.5C42 21.701 37.299 17 31.5 17C25.701 17 21 21.701 21 27.5C21 30.438 22.2067 33.0942 24.1515 35H24ZM37 39C38.1046 39 39 38.1045 39 37H24C24 38.1045 24.8954 39 26 39H37ZM27.4964 35C26.9695 34.7181 26.4757 34.3823 26.0225 34C24.245 32.5006 23.0911 30.2853 23.0051 27.7988C23.0017 27.6996 23 27.6 23 27.5C23 22.8056 26.8056 19 31.5 19C36.1944 19 40 22.8056 40 27.5C40 27.6325 39.997 27.7644 39.991 27.8955C39.8789 30.3427 38.7319 32.52 36.9775 34C36.5243 34.3823 36.0305 34.7181 35.5036 35H27.4964Z" fill="#929294"></path>
+                            </svg>
+                            <span>뷰티</span>
+                        </a>
+                    </li>
+                    <li class="swiper-slide menu-item">
+                        <a href="" role="tab" aria-selected="false" class="menu" data-sort="2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 50 50" fill="none" class="RoundItem_svg_zjf33" data-src="https://im.pstatic.net/selective/category/svg/1649053631707_icon_food.svg" xmlns:xlink="http://www.w3.org/1999/xlink" focusable="false" aria-hidden="true">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M21.7171 12.6531C20.2914 10.4545 17.8155 9 15 9V11C18.1706 11 20.7669 13.4593 20.9851 16.5744C20.5564 16.4731 20.1106 16.339 19.6352 16.1769C19.4413 16.1107 19.2312 16.0714 19 16.0645C13.2492 15.923 8 21.7339 8 28.4987C8 35.2635 13.4197 41 19.5 41H25.5C26.561 41 27.6019 40.8569 28.5974 40.5792C29.1753 40.8492 29.82 41 30.5 41C31.9136 41 33.175 40.3482 34 39.3287C34.825 40.3482 36.0864 41 37.5 41C39.9853 41 42 38.9853 42 36.5C42 34.3442 40.484 32.5424 38.46 32.1026C38.4864 31.9055 38.5 31.7043 38.5 31.5C38.5 30.1649 37.9186 28.9656 36.9951 28.1415C36.8247 21.8994 32.2116 16.5019 26.8672 16.0876C28.1715 14.987 29 13.3402 29 11.5V9.5H27C24.7165 9.5 22.731 10.7756 21.7171 12.6531ZM18.9896 18.0698C19.6612 18.2988 20.3257 18.4931 21 18.6228V19.9596C20.4228 19.9152 19.8739 19.8402 19.4144 19.7636C19.0568 19.704 18.7596 19.6445 18.5533 19.6003C18.4502 19.5783 18.3702 19.5601 18.3171 19.5477L18.2581 19.5337L18.2447 19.5304L18.2423 19.5298C18.2424 19.5298 18.2425 19.5299 18 20.5C17.7575 21.4702 17.7576 21.4702 17.7577 21.4702L17.7607 21.471L17.7669 21.4725L17.7878 21.4776C17.8055 21.4819 17.8306 21.4879 17.8626 21.4953C17.9266 21.5103 18.0185 21.5311 18.1342 21.5559C18.3654 21.6055 18.6931 21.671 19.0856 21.7364C19.865 21.8663 20.9244 22 22 22C23.0756 22 24.1349 21.8663 24.9144 21.7364C25.3068 21.671 25.6346 21.6055 25.8658 21.5559C25.9815 21.5311 26.0733 21.5103 26.1374 21.4953C26.1694 21.4879 26.1945 21.4819 26.2122 21.4776L26.2331 21.4725L26.2393 21.471L26.2423 21.4702C26.2424 21.4702 26.2425 21.4702 26 20.5C25.7575 19.5299 25.7576 19.5298 25.7577 19.5298L25.7553 19.5304L25.7419 19.5337L25.6829 19.5477C25.6298 19.5601 25.5497 19.5783 25.4467 19.6003C25.2404 19.6445 24.9431 19.704 24.5856 19.7636C24.1261 19.8402 23.5772 19.9152 23 19.9596V18.7914C24.053 18.7579 25.0841 18.5231 26.1764 18.0891C26.1984 18.0803 26.2194 18.0743 26.2431 18.0702C26.2669 18.066 26.3029 18.0621 26.3554 18.0637L26.3659 18.064C30.3216 18.1599 34.2813 22.0294 34.9128 27.0926C34.618 27.0319 34.3127 27 34 27C31.5147 27 29.5 29.0147 29.5 31.5C29.5 31.7043 29.5136 31.9055 29.54 32.1026C27.5159 32.5424 26 34.3442 26 36.5C26 37.3926 26.2599 38.2245 26.7081 38.9241C26.3096 38.9746 25.9061 39 25.5 39H19.5C14.6629 39 10 34.3029 10 28.4987C10 22.5843 14.5768 17.9613 18.9438 18.0638C18.9618 18.0645 18.9729 18.0661 18.9785 18.0671C18.9844 18.0681 18.9876 18.0691 18.9896 18.0698ZM34 33.6713C33.3923 32.9204 32.5479 32.3689 31.5802 32.1305C31.5278 31.9291 31.5 31.7178 31.5 31.5C31.5 30.1193 32.6193 29 34 29C35.3807 29 36.5 30.1193 36.5 31.5C36.5 31.7178 36.4722 31.9291 36.4198 32.1305C35.4521 32.3689 34.6077 32.9204 34 33.6713ZM30.5 39C31.8807 39 33 37.8807 33 36.5C33 35.1193 31.8807 34 30.5 34C29.1193 34 28 35.1193 28 36.5C28 37.8807 29.1193 39 30.5 39ZM37.5 39C36.1193 39 35 37.8807 35 36.5C35 35.1193 36.1193 34 37.5 34C38.8807 34 40 35.1193 40 36.5C40 37.8807 38.8807 39 37.5 39ZM23 15.5C23 13.2909 24.7909 11.5 27 11.5C27 13.7091 25.2091 15.5 23 15.5Z"></path>
+                                </svg>
+                            <span>푸드</span>
+                        </a>
+                    </li>
+                    <li class="swiper-slide menu-item">
+                        <a href="" role="tab" aria-selected="false" class="menu" data-sort="3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 50 50" fill="none" class="RoundItem_svg_zjf33" data-src="https://im.pstatic.net/selective/category/svg/1649053613441_icon_fashion.svg" xmlns:xlink="http://www.w3.org/1999/xlink" focusable="false" aria-hidden="true">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M15.6475 13.8353L17.7361 10.8528C18.1104 10.3183 18.7219 10 19.3744 10H30.6256C31.2781 10 31.8896 10.3183 32.2638 10.8528L34.3525 13.8353C34.503 14.0504 34.6074 14.2891 34.664 14.5372C37.954 16.8514 40 20.6585 40 24.8156V27C40 28.1046 39.1046 29 38 29H36V38C36 39.1046 35.1046 40 34 40H16C14.8954 40 14 39.1046 14 38V29H12C10.8954 29 10 28.1046 10 27V24.8156C10 20.6585 12.046 16.8514 15.336 14.5372C15.3926 14.2891 15.4969 14.0504 15.6475 13.8353ZM18.9992 12.5357L17.2858 14.9826L19.8106 20.6852L23.0074 17.845C23.1117 17.7524 23.2207 17.6683 23.3337 17.5926L18.9992 12.5357ZM26.6662 17.5926C26.7793 17.6683 26.8883 17.7524 26.9925 17.845L30.1894 20.6852L32.7142 14.9826L31.0007 12.5357L26.6662 17.5926ZM28.8258 12L21.1742 12L25 16.4634L28.8258 12ZM15.843 16.664C13.456 18.6333 12 21.5999 12 24.8156V27H16V38H34V27H38V24.8156C38 21.5999 36.544 18.6333 34.157 16.664L32.0182 21.4949C31.4697 22.7338 29.8739 23.0803 28.861 22.1804L25.6642 19.3401C25.2853 19.0035 24.7146 19.0035 24.3358 19.3401L21.139 22.1804C20.1261 23.0803 18.5303 22.7338 17.9818 21.4949L15.843 16.664Z"></path>
+                            </svg>
+                            <span>패션</span>
+                        </a>
+                    </li>
+                    <li class="swiper-slide menu-item">
+                        <a href="" role="tab" aria-selected="false" class="menu" data-sort="4">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 50 50" fill="none" class="RoundItem_svg_zjf33" data-src="https://im.pstatic.net/selective/category/svg/1649053639622_icon_life.svg" xmlns:xlink="http://www.w3.org/1999/xlink" focusable="false" aria-hidden="true">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M21.164 12.9026C20.786 12.574 20.2232 12.5756 19.8472 12.9065L13 18.9321V19H12.9228L12 19.8121V39H16V32C16 30.8954 16.8954 30 18 30H24C25.1045 30 26 30.8954 26 32V39H30V32.6076C29.3652 31.5541 29 30.3197 29 29C29 25.134 32.134 22 36 22C39.866 22 43 25.134 43 29C43 32.5265 40.3923 35.4439 37 35.9291V40H35V35.9291C33.8959 35.7712 32.875 35.3556 32 34.7453V39C32 40.1046 31.1045 41 30 41H12C10.8954 41 9.99997 40.1046 9.99997 39V21.5721L8.66061 22.7507L7.33936 21.2493L11 18.028V11H13V16.268L18.526 11.4051C19.654 10.4124 21.3425 10.4074 22.4764 11.3934L32.6562 20.2454L31.3438 21.7546L21.164 12.9026ZM32 32.0005C32.7212 32.9604 33.7799 33.6523 35 33.9V30H37V33.9C39.2822 33.4367 41 31.419 41 29C41 26.2386 38.7614 24 36 24C33.2385 24 31 26.2386 31 29C31 30.1256 31.3723 31.1648 32 32.0005ZM24 39V32H18V39H24Z" fill="#929294"></path>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M25 24C25 26.2091 23.2091 28 21 28C18.7908 28 17 26.2091 17 24C17 21.7909 18.7908 20 21 20C23.2091 20 25 21.7909 25 24ZM23 24C23 25.1046 22.1045 26 21 26C19.8954 26 19 25.1046 19 24C19 22.8954 19.8954 22 21 22C22.1045 22 23 22.8954 23 24Z"></path>
+                            </svg>
+                            <span>라이프</span> 
+                        </a>
+                    </li>
+                    <li class="swiper-slide menu-item">
+                        <a href="" role="tab" aria-selected="false" class="menu" data-sort="5">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 50 50" fill="none" class="RoundItem_svg_zjf33" data-src="https://im.pstatic.net/selective/category/svg/1656549813398_icon_travel.svg" xmlns:xlink="http://www.w3.org/1999/xlink" focusable="false" aria-hidden="true">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M8.00186 14.5314C6.66687 13.7626 6.66584 11.8365 8 11.0662L9.38267 10.268C9.85995 9.9924 10.4298 9.926 10.9576 10.0844L25.2714 14.3807L31.0449 11.0474C31.517 10.7748 32.0799 10.7068 32.6034 10.859L37.5151 12.2875C39.1975 12.7768 39.4822 15.0394 37.9733 15.9302L17.1852 28.2024C16.9051 28.3677 16.589 28.4623 16.2641 28.4778L14.7176 28.5519C14.3887 28.5677 14.0611 28.502 13.7637 28.3607L9.43839 26.3059C7.47713 25.3742 8.19738 22.4239 10.3673 22.5007L12.4366 22.5739L16.676 19.527L8.00186 14.5314ZM10.3827 12L9 12.7983L17.6741 17.7939C18.9334 18.5192 19.0233 20.3029 17.8432 21.1511L13.6038 24.198C13.2441 24.4565 12.8086 24.5883 12.3658 24.5727L10.2966 24.4994L14.6219 26.5542L16.1684 26.4801L36.9566 14.2079L32.0449 12.7795L26.2714 16.1128C25.7941 16.3883 25.2243 16.4547 24.6965 16.2963L10.3827 12ZM40.9746 23.343C38.1515 20.2511 33.2828 20.2511 30.4597 23.343C28.3224 25.6838 27.99 29.1556 29.6444 31.8594L33.7188 38.5181H11.317V40.5181H35.5592C36.0606 40.5752 36.5888 40.3595 36.8877 39.871L41.7899 31.8594C43.4443 29.1556 43.112 25.6838 40.9746 23.343ZM31.9366 24.6916C33.9667 22.4683 37.4677 22.4683 39.4977 24.6916C41.0346 26.3748 41.2736 28.8713 40.084 30.8155L35.7172 37.9521L31.3504 30.8155C30.1607 28.8713 30.3997 26.3748 31.9366 24.6916ZM35.73 26C34.6254 26 33.73 26.8954 33.73 28C33.73 29.1046 34.6254 30 35.73 30C36.8345 30 37.73 29.1046 37.73 28C37.73 26.8954 36.8345 26 35.73 26Z"></path>
+                            </svg>
+                            <span>여행/체험</span> 
+                        </a>
+                    </li>
+                    <li class="swiper-slide menu-item">
+                        <a href="" role="tab" aria-selected="false" class="menu" data-sort="6">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 50 50" fill="none" class="RoundItem_svg_zjf33" data-src="https://im.pstatic.net/selective/category/svg/1649053647021_icon_kids.svg" xmlns:xlink="http://www.w3.org/1999/xlink" focusable="false" aria-hidden="true">
+                                <path d="M27.02 27.8012C26.9679 28.0578 26.7864 28.3543 26.4179 28.5999C26.0477 28.8467 25.5452 29 25 29C24.4548 29 23.9523 28.8467 23.5821 28.5999C23.2136 28.3543 23.0321 28.0578 22.98 27.8012L21.02 28.1989C21.1942 29.0574 21.7413 29.7764 22.4727 30.264C23.2023 30.7504 24.0987 31 25 31C25.9012 31 26.7977 30.7504 27.5273 30.264C28.2587 29.7764 28.8058 29.0574 28.98 28.1989L27.02 27.8012Z"></path>
+                                <path d="M23 24.5C23 25.3285 22.3284 26 21.5 26C20.6716 26 20 25.3285 20 24.5C20 23.6716 20.6716 23 21.5 23C22.3284 23 23 23.6716 23 24.5Z"></path>
+                                <path d="M28.5 26C29.3284 26 30 25.3285 30 24.5C30 23.6716 29.3284 23 28.5 23C27.6716 23 27 23.6716 27 24.5C27 25.3285 27.6716 26 28.5 26Z"></path>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M26.4792 11.0458C25.596 10.3178 24.4778 10.0893 23.4707 10.3198L23.0243 8.37029C24.6218 8.00452 26.3779 8.37057 27.7512 9.50243C28.8512 10.409 29.5179 11.6549 29.7104 12.9598C33.9964 14.7908 37 19.0447 37 24C37 27.9945 35.0483 31.5331 32.0465 33.7143C34.3908 34.9919 36.0946 36.8904 36.7286 39.0878C37.0252 40.1159 36.1326 41 35.0625 41H14.9375C13.8674 41 12.9748 40.1159 13.2714 39.0878C13.9053 36.8904 15.6092 34.9919 17.9535 33.7143C18.0083 33.7542 18.0635 33.7935 18.119 33.8324C15.0236 31.6622 13 28.0674 13 24C13 17.3726 18.3726 12 25 12C25.8304 12 26.6411 12.0844 27.4239 12.245C27.2088 11.7984 26.8933 11.387 26.4792 11.0458ZM27.0208 15.843C27.3805 15.4067 27.6091 14.8998 27.7092 14.3714C26.8476 14.1294 25.9389 14 25 14C19.4772 14 15 18.4772 15 24C15 29.5229 19.4772 34 25 34C30.5228 34 35 29.5229 35 24C35 20.1328 32.8048 16.7782 29.5924 15.1146C29.4042 15.8262 29.0638 16.5089 28.5642 17.1151C26.6673 19.4166 23.2488 19.6768 20.9364 17.771L22.2085 16.2276C23.7054 17.4614 25.8565 17.2557 27.0208 15.843ZM29.9588 34.9307C28.4474 35.6175 26.7684 36 25 36C23.2316 36 21.5526 35.6175 20.0412 34.9307C17.7756 35.8558 16.1459 37.3688 15.427 39H34.573C33.8541 37.3688 32.2244 35.8558 29.9588 34.9307Z"></path>
+                            </svg>
+                            <span>키즈</span> 
+                        </a>
+                    </li>
+                    <li class="swiper-slide menu-item">
+                        <a href="" role="tab" aria-selected="false" class="menu" data-sort="7">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" fill="none" class="RoundItem_svg_zjf33" data-src="https://im.pstatic.net/selective/category/svg/1649053654264_icon_tech.svg" xmlns:xlink="http://www.w3.org/1999/xlink" focusable="false" aria-hidden="true">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M38 33C38 35.2091 36.2091 37 34 37C31.7909 37 30 35.2091 30 33C30 30.7909 31.7909 29 34 29C36.2091 29 38 30.7909 38 33ZM36 33C36 34.1046 35.1046 35 34 35C32.8954 35 32 34.1046 32 33C32 31.8954 32.8954 31 34 31C35.1046 31 36 31.8954 36 33Z"></path>
+                                <path d="M35.5 25.5C35.5 26.3284 34.8284 27 34 27C33.1716 27 32.5 26.3284 32.5 25.5C32.5 24.6716 33.1716 24 34 24C34.8284 24 35.5 24.6716 35.5 25.5Z"></path>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M11 13H37V18H39V13C39 11.8954 38.1046 11 37 11H11C9.89543 11 9 11.8954 9 13V31C9 32.1046 9.89543 33 11 33H19V38H15V40H39C40.1046 40 41 39.1046 41 38V22C41 20.8954 40.1046 20 39 20H29C27.8954 20 27 20.8954 27 22V27H11L11 13ZM27 29H11V31H27V29ZM27 33H21V38H27V33ZM29 22H39V38H29V22Z"></path>
+                            </svg>
+                            <span>테크</span> 
+                        </a>
+                    </li>
+                    <li class="swiper-slide menu-item">
+                        <a href="" role="tab" aria-selected="false" class="menu" data-sort="8">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" fill="none" class="RoundItem_svg_zjf33" data-src="https://im.pstatic.net/selective/category/svg/1649053665869_icon_leisure.svg" xmlns:xlink="http://www.w3.org/1999/xlink" focusable="false" aria-hidden="true">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M38.2338 41H11.7662C10.2116 41 9.25137 39.304 10.0512 37.971L23.8338 15L21.1425 10.5145L22.8575 9.48547L25 13.0563L27.1425 9.48547L28.8575 10.5145L26.1662 15L39.9488 37.971C40.7486 39.304 39.7884 41 38.2338 41ZM11.7662 39L15.3662 33H21.382L18.382 39H11.7662ZM22.382 31H16.5662L25 16.9436L33.4338 31H27.618L25.8944 27.5528C25.5259 26.8157 24.4741 26.8157 24.1056 27.5528L22.382 31ZM28.618 33L31.618 39H38.2338L34.6338 33H28.618ZM25 30.2361L29.382 39H20.618L25 30.2361Z"></path>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M37.7984 9.84876C37.1682 9.6648 36.5996 9.93092 36.2765 10.3346C35.9721 10.7151 35.8542 11.239 35.9913 11.7395C36.0798 12.0625 36.1274 12.4036 36.1274 12.7574C36.1274 14.8786 34.4077 16.5983 32.2865 16.5983C31.8267 16.5983 31.4265 16.8382 31.2006 17.1891C30.9661 17.5534 30.9069 18.0692 31.1869 18.5223C32.2142 20.1854 34.0564 21.2971 36.1591 21.2971C39.385 21.2971 42 18.6821 42 15.4562C42 12.7982 40.2254 10.5573 37.7984 9.84876ZM38.1274 12.7574C38.1274 12.5483 38.1164 12.3415 38.0948 12.1377C39.2349 12.8043 40 14.0418 40 15.4562C40 17.5775 38.2804 19.2971 36.1591 19.2971C35.2324 19.2971 34.3818 18.9692 33.7176 18.4216C36.2516 17.7834 38.1274 15.4894 38.1274 12.7574Z"></path>
+                                <path d="M9 14H11V12H9V14Z"></path>
+                                <path d="M18 18H16V16H18V18Z"></path>
+                                < d="M11 23H13V21H
+                            </svg>
+                            <span>취미레저</span> 
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="swiper group-slide">
+                <ul id="trendLive" class="swiper-wrapper slide-list" role="tabpanel">
+                    <!-- ... -->
+                </ul>
+            </div>
+        </section>
+        <!-- SECTION THEME -->
+        <section class="section theme">
+            <h2 class="blind">테마별 라이브 아이템</h2>
+            <div class="group-title">
+                <div class="title-area"><img src="./assets/images/theme_title.png" alt="원더랜드 페스타"></div>
+                <a href="" class="link">역대급 혜택 라인업 ~52% OFF</a>
+            </div>
+            <div class="swiper group-slide">
+                <ul class="swiper-wrapper slide-list">
+                    <li class="swiper-slide slide-item">
+                        <a href="" class="link-sale">
+                            <div class="img-area">
+                                <div class="img-box">
+                                    <img src="./assets/images/theme1.png" alt="비오템 옴므">
+                                </div>
+                            </div>
+                            <div class="text-area">
+                                <time class="time">오늘 오후 7:00</time>
+                                <p class="title">[클로즈업뷰티] 비오템 옴므로 발렌타인 선물 준비</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="swiper-slide slide-item">
+                        <a href="" class="link-sale">
+                            <div class="img-area">
+                                <div class="img-box">
+                                    <img src="./assets/images/theme1.png" alt="비오템 옴므">
+                                </div>
+                            </div>
+                            <div class="text-area">
+                                <time class="time">오늘 오후 7:00</time>
+                                <p class="title">[클로즈업뷰티] 비오템 옴므로 발렌타인 선물 준비</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="swiper-slide slide-item">
+                        <a href="" class="link-sale">
+                            <div class="img-area">
+                                <div class="img-box">
+                                    <img src="./assets/images/theme1.png" alt="비오템 옴므">
+                                </div>
+                            </div>
+                            <div class="text-area">
+                                <time class="time">오늘 오후 7:00</time>
+                                <p class="title">[클로즈업뷰티] 비오템 옴므로 발렌타인 선물 준비</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="swiper-slide slide-item">
+                        <a href="" class="link-sale">
+                            <div class="img-area">
+                                <div class="img-box">
+                                    <img src="./assets/images/theme1.png" alt="비오템 옴므">
+                                </div>
+                            </div>
+                            <div class="text-area">
+                                <time class="time">오늘 오후 7:00</time>
+                                <p class="title">[클로즈업뷰티] 비오템 옴므로 발렌타인 선물 준비</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <button type="button" class="btn-next">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" focusable="false" aria-hidden="false" role="img" class="RoundMoreButton_icon_refresh_o2D8B" aria-label="새로고침"><path fill-rule="evenodd" clip-rule="evenodd" d="M8 0 4.855 2.74a.348.348 0 0 0-.101.243c0 .095.039.18.1.244L8 5.967v-2.27c3.075 0 5.577 2.439 5.577 5.438 0 2.998-2.502 5.438-5.577 5.438-3.076 0-5.577-2.44-5.577-5.438 0-1.47.603-2.803 1.578-3.783l-1.09-.949C1.706 5.636.96 7.301.96 9.135.96 12.92 4.118 16 8 16c3.881 0 7.04-3.08 7.04-6.865 0-3.786-3.159-6.865-7.04-6.865V0Z" fill="#929294"></path></svg>
+                <span class="text">테마별 라이브</span>
+                <span class="count"><span>1</span> / 6</span>
+            </button>
+        </section>
+        <section class="section category">
+            <h2 class="blind">카테고리별 라이브</h2>
+            <!-- beauty -->
+            <section class="section livetheme">
+                <div class="common-inner">
+                    <div class="group-title">
+                        <h3 class="headline">뷰티</h3>
+                        <a href="" class="link-more">
+                            <span>더보기</span>
+                            <svg width="17" height="17" viewBox="0 0 76 152" fill="none" xmlns="http://www.w3.org/2000/svg" focusable="false" aria-hidden="true" class="TextMoreButton_icon_FLnGe"><path d="M19.176 123.157c.457-.148.853-.544 1.645-1.336l43.557-43.557c.792-.792 1.188-1.188 1.337-1.645a2 2 0 0 0 0-1.236c-.149-.457-.545-.853-1.337-1.645L20.821 30.181c-.792-.792-1.188-1.188-1.645-1.337a2 2 0 0 0-1.236 0c-.457.149-.853.545-1.645 1.337l-1.13 1.131c-.793.792-1.189 1.188-1.337 1.645a2 2 0 0 0 0 1.236c.148.457.544.853 1.336 1.645L55.327 76l-40.163 40.163c-.792.792-1.188 1.188-1.336 1.645a2 2 0 0 0 0 1.236c.148.456.544.852 1.336 1.644l1.132 1.132c.792.792 1.188 1.188 1.644 1.336.402.131.835.131 1.236 0Z" fill="#767678"></path></svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper group-slide">
+                    <ul id="categoryBeautyList" class="swiper-wrapper slide-list" data-sort="1">
+                        <!-- ... -->
+                    </ul>
+                </div>
+            </section>
+            <!-- food -->
+            <section class="section livetheme">
+                <div class="common-inner">
+                    <div class="group-title">
+                        <h3 class="headline">푸드</h3>
+                        <a href="" class="link-more">
+                            <span>더보기</span>
+                            <svg width="17" height="17" viewBox="0 0 76 152" fill="none" xmlns="http://www.w3.org/2000/svg" focusable="false" aria-hidden="true" class="TextMoreButton_icon_FLnGe"><path d="M19.176 123.157c.457-.148.853-.544 1.645-1.336l43.557-43.557c.792-.792 1.188-1.188 1.337-1.645a2 2 0 0 0 0-1.236c-.149-.457-.545-.853-1.337-1.645L20.821 30.181c-.792-.792-1.188-1.188-1.645-1.337a2 2 0 0 0-1.236 0c-.457.149-.853.545-1.645 1.337l-1.13 1.131c-.793.792-1.189 1.188-1.337 1.645a2 2 0 0 0 0 1.236c.148.457.544.853 1.336 1.645L55.327 76l-40.163 40.163c-.792.792-1.188 1.188-1.336 1.645a2 2 0 0 0 0 1.236c.148.456.544.852 1.336 1.644l1.132 1.132c.792.792 1.188 1.188 1.644 1.336.402.131.835.131 1.236 0Z" fill="#767678"></path></svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper group-slide">
+                    <ul id="categoryFoodList" class="swiper-wrapper slide-list" data-sort="2">
+                        <!-- ... -->
+                    </ul>
+                </div>
+            </section>
+            <!-- fashion -->
+            <section class="section livetheme">
+                <div class="common-inner">
+                    <div class="group-title">
+                        <h3 class="headline">패션</h3>
+                        <a href="" class="link-more">
+                            <span>더보기</span>
+                            <svg width="17" height="17" viewBox="0 0 76 152" fill="none" xmlns="http://www.w3.org/2000/svg" focusable="false" aria-hidden="true" class="TextMoreButton_icon_FLnGe"><path d="M19.176 123.157c.457-.148.853-.544 1.645-1.336l43.557-43.557c.792-.792 1.188-1.188 1.337-1.645a2 2 0 0 0 0-1.236c-.149-.457-.545-.853-1.337-1.645L20.821 30.181c-.792-.792-1.188-1.188-1.645-1.337a2 2 0 0 0-1.236 0c-.457.149-.853.545-1.645 1.337l-1.13 1.131c-.793.792-1.189 1.188-1.337 1.645a2 2 0 0 0 0 1.236c.148.457.544.853 1.336 1.645L55.327 76l-40.163 40.163c-.792.792-1.188 1.188-1.336 1.645a2 2 0 0 0 0 1.236c.148.456.544.852 1.336 1.644l1.132 1.132c.792.792 1.188 1.188 1.644 1.336.402.131.835.131 1.236 0Z" fill="#767678"></path></svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper group-slide">
+                    <ul id="categoryFashionList" class="swiper-wrapper slide-list" data-sort="3">
+                        <!-- ... -->
+                    </ul>
+                </div>
+            </section>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="group-notice">
+            <div class="title-area">
+                <strong>법적고지</strong>
+                <a href="" class="link-more">
+                    <span>자세히보기</span>
+                    <svg width="7" height="12.5" viewBox="0 0 7 13" fill="none" xmlns="http://www.w3.org/2000/svg" focusable="false" aria-hidden="true" class="FooterNotice_icon_LV2nL"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.222 6.5.112 1.39.888.61l5.89 5.89-5.89 5.888-.778-.778 5.111-5.11Z" fill="#929294"></path></svg>
+                </a>
+            </div>
+            <div class="desc-area">
+                <p>
+                    네이버㈜는 통신판매중개자이며, 통신판매의 당사자가 아닙니다. 상품, 상품정보, 거래에 관한 의무와 책임은 판매자에게 있습니다.
+                </p>
+            </div>
+        </div>
+        <div class="group-link">
+            <a href="" class="link-login">로그인</a>
+            <a href="" class="link-shopping">네이버 쇼핑</a>
+            <a href="" class="link-shopping">N쇼핑라이브 관리툴</a>
+        </div>
+        <address class="group-info">
+            <button type="button" class="btn-info">
+                <span>네이버(주) 사업자정보</span>
+                <svg width="5" height="10" viewBox="0 0 7 13" fill="none" xmlns="http://www.w3.org/2000/svg" focusable="false" aria-hidden="true" class="BusinessInformation_icon_ticuO"><path d="M5.222 6.5.112 1.39.888.61l5.89 5.89-5.89 5.888-.778-.778 5.111-5.11Z" fill="#303038"></path></svg>
+            </button>
+            <div class="btn-wrap">
+                <ul class="info-list">
+                    <li class="info-item">
+                        <span>대표이사</span>
+                        <span>최수연</span>
+                    </li>
+                    <li class="info-item">
+                        <span>주소</span>
+                        <span>경기도 성남시 분당구 정자일로 95
+                            NAVER 1784, 13561</span>
+                    </li>
+                    <li class="info-item">
+                        <span>문의</span>
+                        <a href="">1:1문의 바로가기</a>
+                    </li>
+                    <li class="info-item">
+                        <span>이메일</span>
+                        <span>helpcustomer@naver.com</span>
+                    </li>
+                    <li class="info-item">
+                        <span>사업자등록번호</span>
+                        <span>220-81-62517</span>
+                    </li>
+                    <li class="info-item">
+                        <span>통신판매업신고번호</span>
+                        <span>제2006-경기성남-0692호</span>
+                    </li>
+                    <li class="info-item">
+                        <span>호스팅 서비스 제공</span>
+                        <span>NAVER Cloud</span>
+                    </li>
+                </ul>
+            </div>
+        </address>
+        <address class="group-addr">
+            <p>
+                <a href="">사업자정보 확인</a>
+                <a href="">네이버약관</a>
+                <a href="">네이버페이 이용약관</a>
+            </p>
+            <p>
+                <a href="">쇼핑라이브 이용약관</a>
+                <a href=""><strong>개인정보처리방침</strong></a>
+                <a href="">안전거래센터</a>
+            </p>
+            <p><a href="tel:1588-3819">대표전화 1588-3819</a></p>
+        </address>
+        <h2 class="group-logo">
+            <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="67" height="13" viewBox="0 0 67 13" focusable="false" aria-hidden="false" role="img" aria-label="네이버" class="Footer_icon_Xv8wj"><g fill="#B3BBC1" fill-rule="evenodd"><path d="m19.28 0-5.04 12.854h4.285l.608-1.701h4.832l.608 1.7h4.285L23.818 0H19.28zm2.269 4.05 1.437 4.015h-2.874l1.437-4.015zM42.594 0v12.854h10.144V9.703h-6.049V7.971h5.86V4.883h-5.86V3.15h5.923V0zm-5.608 0-3.024 8.452L30.937 0h-4.284l5.04 12.854h4.537L41.271 0zM8.758 0v6.88L3.97 0H0v12.854h4.159v-6.88l4.788 6.88h3.97V0zM60.928 5.986h-2.204v-2.71h2.206a1.355 1.355 0 1 1-.002 2.71zm2.8 2.458.39-.163c1.494-.625 2.253-1.978 2.253-3.695 0-1.624-.592-2.825-1.76-3.57C63.525.323 62.118 0 60.181 0h-5.428v12.854h4.033V9.262h1.449l2.457 3.592h4.285l-3.249-4.41z"></path></g></svg></a>
+        </h2>
+    </footer>
+</body>
+</html>

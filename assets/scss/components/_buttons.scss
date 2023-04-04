@@ -1,0 +1,125 @@
+// 더보기 버튼
+.btn-next {
+    @include flexCenterVertical;
+    margin: 20px auto 0;
+    height: 42px;
+    padding: 0 31px 0 30px;
+    border: 1px solid #e6e6ea;
+    border-radius: 21px;
+    line-height: 1.27;
+    font-size: 15px;
+    color: $color-black1;
+    letter-spacing: -0.3px;
+
+    .text { margin: 0 4px 0 7px; }
+}
+
+// 가이드버튼
+.button-area {
+    position: relative;
+    
+    .btn-guide {
+        margin-top: 4px;
+        margin-left: 5px;
+    }
+    .button-wrap {
+        display: none;
+        position: absolute;
+        top: 150%; left: -188px;
+        width: 300px;
+        padding: 19px 38px 14px 18px;
+        border: 1px solid #efeff0;
+        background-color: #fff;
+        line-height: 1.38;
+        font-size: 13px;
+        color: #88878d;
+        z-index: 5;
+
+        &.on { display: block; }
+    }
+    .btn-close {
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        padding: 8px;
+    }
+}
+
+// 분류 버튼
+.select-area { 
+    position: relative;
+    margin-left: auto; 
+
+    &.on { 
+        .btn-sort svg { transform: rotate(-90deg); }
+        .btn-wrap { display: flex; }
+    }
+
+    .btn-sort {
+        display: flex;
+        gap: 5px;
+        font-size: 14px;
+        font-weight: 400;
+        color: $color-gray1;
+        padding: 10px 0;
+    
+        svg {
+            transform: rotate(90deg);
+            vertical-align: top;
+        }
+    }
+    .btn-wrap {
+        display: none;
+        position: absolute;
+        top: 100%; right: 0;
+        flex-direction: column;
+        width: 82px;
+        padding: 8px 0;
+        border: 1px solid #efeff0;
+        background-color: $color-white1;
+        z-index: 10;
+
+        a[role="option"] {
+            display: block;
+            font-size: 14px;
+            padding: 10px 19px;
+            color: $color-gray1;
+
+            &[aria-selected="true"] {
+                color: $color-black2;
+            }
+        }
+    }
+}
+
+
+// 알림받기 버튼
+.btn-alarm {
+    @include flexCenter;
+    gap: 2px;
+    width: 87px;
+    height: 30px;
+    border-radius: 15px;
+    border: 1px solid $color-point;
+    color: $color-point;
+    font-weight: 500;
+    font-size: 12px;
+}
+
+//라이브 더보기
+.live-more {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 43px;
+    padding: 0 31px 0 30px;
+    border: 1px solid #e6e6ea;
+    border-radius: 25px;
+    line-height: 1.27;
+    font-size: 15px;
+    color: #303038;
+    letter-spacing: -0.3px;
+    margin: 0 auto;
+    
+    .bold { font-weight: bold; }
+}

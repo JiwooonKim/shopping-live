@@ -1,0 +1,350 @@
+
+{   
+    "items":[
+        {
+            "id":"0",
+            "sort":"1",
+            "snippet":{
+                "view":"45만",
+                "thumbnail":"./assets/images/trend1.mp4",
+                "title":"바닐라코 초밀착 모공 파운데이션 리뉴얼런칭_클로즈업뷰티",
+                "prd":{
+                    "thumbnail":"./assets/images/trend_thumb1.jfif",
+                    "title":"[바닐라코] 커버리셔스 파워 핏 파운데이션 30ml)",
+                    "price":"23,120"
+                },
+                "market":{
+                    "thumbnail":"./assets/images/trend_market1.jpg",
+                    "name":"김혜나"
+                }
+                
+            }
+        },
+        {
+            "id":"1",
+            "sort":"1",
+            "snippet":{
+                "view":"23만",
+                "thumbnail":"./assets/images/trend2.mp4",
+                "title":"[매스티나] 티나는 뷰티, 화이트데이 선물 혜택",
+                "prd":{
+                    "thumbnail":"./assets/images/trend_thumb2.jpg",
+                    "title":"[클렌징젤증정]매스티나 이민정 매스틱 식스아워스 앰플 스포이드 15ml 3개 / 그리스 수액 6시간 미백앰플",
+                    "price":"79,000"
+                },
+                "market":{
+                    "thumbnail":"./assets/images/trend_market2.jpg",
+                    "name":"매스티나공식몰"
+                }
+                
+            }
+        },
+        {
+            "id":"2",
+            "sort":"2",
+            "snippet":{
+                "view":"17만",
+                "thumbnail":"./assets/images/trend4.mp4",
+                "title":"🍊고당도 블랙라벨 오렌지🍊당도선별 네이블 오렌지!",
+                "prd":{
+                    "thumbnail":"./assets/images/trend_thumb4.jpg",
+                    "title":"프리미엄 블랙라벨 고당도 하이브릭스 오렌지",
+                    "price":"11,900"
+                },
+                "market":{
+                    "thumbnail":"./assets/images/trend_market4.jpg",
+                    "name":"차차프레시"
+                }       
+            }
+        },
+        {
+            "id":"3",
+            "sort":"7",
+            "snippet":{
+                "view":"15만",
+                "thumbnail":"./assets/images/trend3.mp4",
+                "title":"[주연의 핫IT슈] 소니 헤드폰 신제품 공개! 🎧",
+                "prd":{
+                    "thumbnail":"./assets/images/trend_thumb3.png",
+                    "title":"소니 플로트 런 Float Run",
+                    "price":"102,000"
+                },
+                "market":{
+                    "thumbnail":"./assets/images/trend_market3.jpg",
+                    "name":"핫IT슈"
+                }
+                
+            }
+        },
+        {
+            "id":"4",
+            "sort":"3",
+            "snippet":{
+                "view":"13만",
+                "thumbnail":"./assets/images/trend5.mp4",
+                "title":"제너럴아이디어 봄맞이 신상 라이브",
+                "prd":{
+                    "thumbnail":"./assets/images/trend_thumb5.jpg",
+                    "title":"[제너럴아이디어 UNISEX] GNRL 아가일 베스트 [3COL] / SBC1U06011",
+                    "price":"36,000"
+                },
+                "market":{
+                    "thumbnail":"./assets/images/trend_market5.png",
+                    "name":"제너럴아이디어"
+                }
+            }
+        },
+        {
+            "id":"5",
+            "sort":"3",
+            "snippet":{
+                "view":"10만",
+                "thumbnail":"./assets/images/trend8.mp4",
+                "title":"명품 막스마라, 알마니 최대 62% 특가 방송",
+                "prd":{
+                    "thumbnail":"./assets/images/trend_thumb8.jpg",
+                    "title":"막스마라 아피아 울 캐시미어 블렌디드 가디건 63460309 004",
+                    "price":"766,000"
+                },
+                "market":{
+                    "thumbnail":"./assets/images/trend_market8.png",
+                    "name":"마이딩딩"
+                }
+            }
+        },
+        {
+            "id":"6",
+            "sort":"4",
+            "snippet":{
+                "view":"10만",
+                "thumbnail":"./assets/images/trend6.mp4",
+                "title":"🤡로보락 Q7 Max Plus, 다이애드 특가 라이브",
+                "prd":{
+                    "thumbnail":"./assets/images/trend_thumb6.jpg",
+                    "title":"로보락 Q7 Max Plus 로봇청소기",
+                    "price":"849,000"
+                },
+                "market":{
+                    "thumbnail":"./assets/images/trend_market6.jpg",
+                    "name":"로보락 공식 스토어"
+                }
+            }
+        },
+        {
+            "id":"7",
+            "sort":"5",
+            "snippet":{
+                "view":"20만",
+                "thumbnail":"./assets/images/trend7.mp4",
+                "title":"<원더박스> 상상속 밤의 유원지에서 즐기는 가족 봄소풍",
+                "prd":{
+                    "thumbnail":"./assets/images/trend_thumb7.jpg",
+                    "title":"[LIVE 방송특가] 원더박스 자유이용권",
+                    "price":"849,000"
+                },
+                "market":{
+                    "thumbnail":"./assets/images/trend_market7.jpg",
+                    "name":"파라다이스시티"
+                }
+            }
+        },
+        {
+            "id":"8",
+            "sort":"6",
+            "snippet":{
+                "view":"14만",
+                "thumbnail":"./assets/images/trend9.mp4",
+                "title":"방문판매 정경미 교원 빨간펜에서 나왔습니다",
+                "prd":{
+                    "thumbnail":"./assets/images/trend_thumb9.png",
+                    "title":"교원 빨간펜 오마이 감정 그림책 에디션 2(오은영 박사 공동 개발)",
+                    "price":"255,000"
+                },
+                "market":{
+                    "thumbnail":"./assets/images/trend_market9.jpg",
+                    "name":"방문판매 정경미"
+                }
+            }
+        },
+        {
+            "id":"9",
+            "sort":"8",
+            "snippet":{
+                "view":"8만",
+                "thumbnail":"./assets/images/trend10.mp4",
+                "title":"[키덜트쇼]심형탁x메카스마 임팩트 한국 특집 ",
+                "prd":{
+                    "thumbnail":"./assets/images/trend_thumb10.png",
+                    "title":"(23년 9월 발매) 굿스마일컴퍼니 모데로이드 MODEROID 마동왕 그랑조트 (슈퍼 그랑죠) 사동왕 3종 세트",
+                    "price":"178,000"
+                },
+                "market":{
+                    "thumbnail":"./assets/images/trend_market10.jpg",
+                    "name":"키덜트쇼"
+                }
+            }
+        },
+        {
+            "id":"10",
+            "sort":"1",
+            "snippet":{
+                "view":"8만",
+                "thumbnail":"./assets/images/trend11.mp4",
+                "title":"Jeju는 쿤달이 넘고, 1+1은 내가 받는다🚀",
+                "prd":{
+                    "thumbnail":"./assets/images/trend_thumb11.jpg",
+                    "title":"(23년 9월 발매) 굿스마일컴퍼니 모데로이드 MODEROID 마동왕 그랑조트 (슈퍼 그랑죠) 사동왕 3종 세트",
+                    "price":"20,500"
+                },
+                "market":{
+                    "thumbnail":"./assets/images/trend_market11.jpg",
+                    "name":"쿤달"
+                }
+            }
+        },
+        {
+            "id":"11",
+            "sort":"2",
+            "snippet":{
+                "view":"17만",
+                "thumbnail":"./assets/images/trend12.mp4",
+                "title":"황토밭 쫀달 고구마🍠옹골차고 달콤한 차차네 꿀고구마! ",
+                "prd":{
+                    "thumbnail":"./assets/images/trend_thumb12.jpg",
+                    "title":"고구마 차차꿀구마",
+                    "price":"12,900"
+                },
+                "market":{
+                    "thumbnail":"./assets/images/trend_market4.jpg",
+                    "name":"차차프레시"
+                }
+            }
+        },
+        {
+            "id":"12",
+            "sort":"8",
+            "snippet":{
+                "view":"8만",
+                "thumbnail":"./assets/images/trend10.mp4",
+                "title":"[키덜트쇼]심형탁x메카스마 임팩트 한국 특집 ",
+                "prd":{
+                    "thumbnail":"./assets/images/trend_thumb10.png",
+                    "title":"(23년 9월 발매) 굿스마일컴퍼니 모데로이드 MODEROID 마동왕 그랑조트 (슈퍼 그랑죠) 사동왕 3종 세트",
+                    "price":"178,000"
+                },
+                "market":{
+                    "thumbnail":"./assets/images/trend_market10.jpg",
+                    "name":"키덜트쇼"
+                }
+            }
+        },
+        {
+            "id":"13",
+            "sort":"1",
+            "snippet":{
+                "view":"8만",
+                "thumbnail":"./assets/images/trend13.mp4",
+                "title":"에스티로더 전품목 20% +NEW프라이머_클로즈업뷰티",
+                "prd":{
+                    "thumbnail":"./assets/images/trend_thumb13.jpg",
+                    "title":"[기획세트] '총 120ml 대용량' 갈색병 세럼 75ml (+15mlX3개)",
+                    "price":"178,000"
+                },
+                "market":{
+                    "thumbnail":"./assets/images/trend_market1.jpg",
+                    "name":"김혜나"
+                }
+            }
+        },
+        {
+            "id":"14",
+            "sort":"2",
+            "snippet":{
+                "view":"8만",
+                "thumbnail":"./assets/images/trend14.mp4",
+                "title":"[34년전통] 서울 서부 3대 1/1+한돈 갈비 맛집",
+                "prd":{
+                    "thumbnail":"./assets/images/trend_thumb14.jpg",
+                    "title":"[34년전통] 홍농숯불갈비 한돈 1/1+등급 수제양념순살구이 500g",
+                    "price":"12,300"
+                },
+                "market":{
+                    "thumbnail":"./assets/images/trend_market10.jpg",
+                    "name":"초신선라이브"
+                }
+            }
+        },
+        {
+            "id":"15",
+            "sort":"3",
+            "snippet":{
+                "view":"2만",
+                "thumbnail":"./assets/images/trend15.mp4",
+                "title":"[키덜트쇼]심형탁x메카스마 임팩트 한국 특집 ",
+                "prd":{
+                    "thumbnail":"./assets/images/trend_thumb15.jpg",
+                    "title":"[봄신상 무배] 젠디 바론 아노락 스트링 반집업 밴딩 바지 세트",
+                    "price":"32,000"
+                },
+                "market":{
+                    "thumbnail":"./assets/images/trend_market10.jpg",
+                    "name":"모노타임"
+                }
+            }
+        },
+        {
+            "id":"16",
+            "sort":"8",
+            "snippet":{
+                "view":"8만",
+                "thumbnail":"./assets/images/trend10.mp4",
+                "title":"[키덜트쇼]심형탁x메카스마 임팩트 한국 특집 ",
+                "prd":{
+                    "thumbnail":"./assets/images/trend_thumb10.png",
+                    "title":"(23년 9월 발매) 굿스마일컴퍼니 모데로이드 MODEROID 마동왕 그랑조트 (슈퍼 그랑죠) 사동왕 3종 세트",
+                    "price":"178,000"
+                },
+                "market":{
+                    "thumbnail":"./assets/images/trend_market10.jpg",
+                    "name":"키덜트쇼"
+                }
+            }
+        },
+        {
+            "id":"17",
+            "sort":"6",
+            "snippet":{
+                "view":"8만",
+                "thumbnail":"./assets/images/trend18.mp4",
+                "title":"[키덜트쇼]심형탁x메카스마 임팩트 한국 특집 ",
+                "prd":{
+                    "thumbnail":"./assets/images/trend_thumb10.png",
+                    "title":"(23년 9월 발매) 굿스마일컴퍼니 모데로이드 MODEROID 마동왕 그랑조트 (슈퍼 그랑죠) 사동왕 3종 세트",
+                    "price":"178,000"
+                },
+                "market":{
+                    "thumbnail":"./assets/images/trend_market10.jpg",
+                    "name":"키즈쇼"
+                }
+            }
+        },
+        {
+            "id":"18",
+            "sort":"4",
+            "snippet":{
+                "view":"8만",
+                "thumbnail":"./assets/images/trend18.mp4",
+                "title":"[키덜트쇼]심형탁x메카스마 임팩트 한국 특집 ",
+                "prd":{
+                    "thumbnail":"./assets/images/trend_thumb10.png",
+                    "title":"(23년 9월 발매) 굿스마일컴퍼니 모데로이드 MODEROID 마동왕 그랑조트 (슈퍼 그랑죠) 사동왕 3종 세트",
+                    "price":"178,000"
+                },
+                "market":{
+                    "thumbnail":"./assets/images/trend_market10.jpg",
+                    "name":"키즈쇼"
+                }
+            }
+        }
+    ]
+}

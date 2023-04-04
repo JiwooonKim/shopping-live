@@ -1,0 +1,164 @@
+{
+    "items":[
+        {
+            "id":"0",
+            "sort":"1",
+            "snippet":{
+                "view":"24만",
+                "thumbnail":"./assets/images/beauty1.jpg",
+                "title":"[프리오더] 토너품절. 역시 대란템",
+                "market":"니모어샵"
+            }
+        },
+        {
+            "id":"1",
+            "sort":"1",
+            "snippet":{
+                "view":"923",
+                "thumbnail":"./assets/images/beauty2.jpg",
+                "title":"[빈스캐빈]밀착광채커버★단백질링클필팩트★두유선톤업크림 ",
+                "market":"빈스캐빈 공식스토어"
+            }
+        },
+        {
+            "id":"2",
+            "snippet":{
+                "sort":"1",
+                "view":"20만",
+                "thumbnail":"./assets/images/beauty3.jpg",
+                "title":"👑스킨볼릭👑에스테틱100만개 팔린 화장품 최저가❤️",
+                "market":"니모어샵"
+            }
+        },
+        {
+            "id":"3",
+            "sort":"1",
+            "snippet":{
+                "view":"20만",
+                "thumbnail":"./assets/images/beauty4.png",
+                "title":"엑소*? 리쥬***? 이제는 집에서 스킨부스터 하세요!",
+                "market":"아느로 ANRO"
+            }
+        },
+        {
+            "id":"4",
+            "sort":"1",
+            "snippet":{
+                "view":"20만",
+                "thumbnail":"./assets/images/beauty5.jpg",
+                "title":"민감성피부를 위한 피부진정쿠션",
+                "market":"안탈라"
+            }
+        },
+        {
+            "id":"5",
+            "sort":"1",
+            "snippet":{
+                "view":"20만",
+                "thumbnail":"./assets/images/beauty6.jpg",
+                "title":"✨트웬티스킨 스킨핏 마스크팩 1일1팩추천 마스크팩",
+                "market":"thewon"
+            }
+        },
+        {
+            "id":"6",
+            "sort":"2",
+            "snippet":{
+                "view":"10만",
+                "thumbnail":"./assets/images/food1.jpg",
+                "title":"꽃샘추위도 거뜬하게 리얼유자주스🤩🤩",
+                "market":"해맑음농업회사"
+            }
+        },
+        {
+            "id":"7",
+            "sort":"2",
+            "snippet":{
+                "view":"10만",
+                "thumbnail":"./assets/images/food2.jpg",
+                "title":"궁디저트 🌈 노설탕 노밀가루 🌈 쌀베이글 쌀소금빵",
+                "market":"궁디저트"
+            }
+        },
+        {
+            "id":"8",
+            "sort":"2",
+            "snippet":{
+                "view":"824",
+                "thumbnail":"./assets/images/food3.jpg",
+                "title":"가장 맛있고 촉촉한 웃는날 오란다 초특가 판매",
+                "market":"수아 SUA"
+            }
+        },
+        {
+            "id":"9",
+            "sort":"2",
+            "snippet":{
+                "view":"10만",
+                "thumbnail":"./assets/images/food4.jpg",
+                "title":"💥현명한 선택💥절대 후회 없습니다.",
+                "market":"은영이떡볶이"
+            }
+        },
+        {
+            "id":"10",
+            "sort":"2",
+            "snippet":{
+                "view":"10만",
+                "thumbnail":"./assets/images/food5.jpg",
+                "title":"태준:)전남 무안 유기농 꿀고구마 피자고구마 설레고",
+                "market":"앤유"
+            }
+        },
+        {
+            "id":"11",
+            "sort":"3",
+            "snippet":{
+                "view":"1200",
+                "thumbnail":"./assets/images/fashion1.jpg",
+                "title":"👀여성의류디자이너👀자체제작니트조끼, 셔츠, 슬랙스",
+                "market":"루미에르"
+            }
+        },
+        {
+            "id":"12",
+            "sort":"3",
+            "snippet":{
+                "view":"900",
+                "thumbnail":"./assets/images/fashion2.jpg",
+                "title":"🌟반짝특가🌟BEST 봄신상 상의 몰아보기🌸🌷",
+                "market":"코코벨"
+            }
+        },
+        {
+            "id":"13",
+            "sort":"3",
+            "snippet":{
+                "view":"870",
+                "thumbnail":"./assets/images/fashion3.jpg",
+                "title":"귀여운 키링들이 얼마나 많게요?!🤩감성소품샵💜",
+                "market":"루틸리 소품샵"
+            }
+        },
+        {
+            "id":"14",
+            "sort":"3",
+            "snippet":{
+                "view":"640",
+                "thumbnail":"./assets/images/fashion4.jpg",
+                "title":"반팔 잠옷 빅사이즈 데일리룩 특가",
+                "market":"베러바인"
+            }
+        },
+        {
+            "id":"15",
+            "sort":"3",
+            "snippet":{
+                "view":"520",
+                "thumbnail":"./assets/images/fashion5.jpg",
+                "title":"노현정스타일~ 봄 신상으로 중년여성들의 맛집! 라방특가",
+                "market":"쏘우"
+            }
+        }
+    ]
+}

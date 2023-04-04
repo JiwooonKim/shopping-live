@@ -1,0 +1,22 @@
+// utils
+@import './utils/variables';
+@import './utils/mixins';
+
+//base
+@import './base/reset';
+@import './base/typography';
+@import './base/common';
+
+//components
+@import './components/buttons';
+@import './components/badges';
+
+//layout
+@import './layout/header';
+@import './layout/footer';
+
+
+//page
+@import './page/home';
+@import './page/event';
+@import './page/cate';

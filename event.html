@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>네이버 쇼핑LIVE</title>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="common-inner">
+            <div class="group-header">
+                <h1 class="logo-area">
+                    <a href="">
+                        <span class="blind">쇼핑LIVE</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="79" height="28" viewBox="0 0 79 28" focusable="false" aria-hidden="false" role="img"><defs><linearGradient id="logo_svg__a" x1="49.999%" x2="49.999%" y1="4.561%" y2="105.472%"><stop offset="0%" stop-color="#F4361D"></stop><stop offset="100%" stop-color="#F61C00"></stop></linearGradient></defs><g fill="none" fill-rule="evenodd"><path fill="url(#logo_svg__a)" d="m77.605.806-38.07 2.316a1.007 1.007 0 0 0-.946 1.006v17.376c0 .533.414.974.946 1.007l4.651.282v4.784c0 .166.188.261.322.163l6.153-4.554 26.944 1.64a1.009 1.009 0 0 0 1.07-1.006V1.813a1.01 1.01 0 0 0-1.07-1.007"></path><path fill="#1E1E1E" d="M13.196 13.841h-2.524a.216.216 0 0 0-.216.216v3.623H7.885v-3.623a.215.215 0 0 0-.216-.216H5.145a.216.216 0 0 0-.216.216v3.623H.354a.215.215 0 0 0-.215.215v2.122c0 .12.096.216.215.216h17.633a.216.216 0 0 0 .215-.216v-2.122a.215.215 0 0 0-.215-.215h-4.575v-3.623a.216.216 0 0 0-.216-.216"></path><path fill="#1E1E1E" d="M2.985 14.204 9.17 9.418l6.186 4.786a.215.215 0 0 0 .303-.041l1.403-1.873a.219.219 0 0 0-.041-.3L11.34 7.6a1.635 1.635 0 0 1-.632-1.29V4.222a.215.215 0 0 0-.215-.215H7.847a.214.214 0 0 0-.215.215V6.31c0 .505-.234.98-.633 1.29L1.32 11.99a.216.216 0 0 0-.041.3l1.401 1.873c.072.095.21.115.304.04M31.886 3.414v10.028c0 .12.097.216.217.216h2.544c.12 0 .215-.097.215-.216V3.414a.215.215 0 0 0-.215-.216h-2.544a.217.217 0 0 0-.217.216m-8.902 7.28h2.78V6.103h-2.78v4.59zm6.983 0H28.49V6.102h1.478c.12 0 .215-.096.215-.215V3.85a.215.215 0 0 0-.215-.216H18.706a.216.216 0 0 0-.215.216v2.037c0 .119.097.215.215.215h1.543v4.592h-1.543a.215.215 0 0 0-.215.215v2.037c0 .119.097.215.215.215h11.261c.12 0 .215-.096.215-.215v-2.037a.215.215 0 0 0-.215-.215zm1.237 8.586c0 1.336-1.14 2.424-2.54 2.424-1.401 0-2.54-1.088-2.54-2.424 0-1.336 1.139-2.423 2.54-2.423 1.4 0 2.54 1.087 2.54 2.423m-2.54-5.116c-2.97 0-5.386 2.295-5.386 5.116 0 2.821 2.416 5.116 5.386 5.116 2.969 0 5.385-2.295 5.385-5.116 0-2.821-2.416-5.116-5.385-5.116"></path><path fill="#FFF" d="M46.525 7.175h-2.339v11.012h6.52v-2.319h-4.181zm6.159 11.012h2.339V7.175h-2.339zm21.067-8.693V7.175h-6.882v11.012h6.882v-2.319h-4.544v-2.104h3.8v-2.319h-3.8V9.494zM63.035 7.175l-1.954 8.223-1.953-8.223h-2.467l3.01 11.012h2.821l3.009-11.012z"></path></g></svg>
+                    </a>
+                </h1>
+                <div class="link-area">
+                    <a href="">
+                        <span class="blind">네이버 쇼핑</span>
+                        <svg width="41" height="16" viewBox="0 0 41 16" fill="none" xmlns="http://www.w3.org/2000/svg" focusable="false" aria-hidden="false" role="img"><path fill-rule="evenodd" popular-rule="evenodd" d="M0 16h16V0H0v16ZM9.31 4.338H12v7.324H9.272l-2.58-3.791v3.791H4V4.338h2.728l2.58 3.79v-3.79ZM25.632 5.57c-.067.138-.222.311-.467.522a7.82 7.82 0 0 1-1 .705 47.62 47.62 0 0 1-2.548 1.482l-.61-.948c.498-.267.954-.518 1.368-.753.414-.235.828-.49 1.243-.765.282-.187.514-.365.696-.535.182-.17.325-.348.43-.535.102-.186.172-.39.21-.613.038-.223.056-.484.056-.784V2.4h1.243v.947c0 .3.017.561.05.784.033.223.103.43.211.62s.26.374.46.552c.199.179.468.377.808.595.39.252.779.486 1.168.705.39.219.829.458 1.318.717l-.596.935c-.465-.259-.917-.512-1.356-.759-.439-.247-.845-.488-1.218-.723a8.842 8.842 0 0 1-.981-.686c-.249-.207-.407-.378-.473-.516h-.012Zm5.258 4.823v1.02H20.373v-1.02h2.984V8.182h1.218v2.21h2.113v-2.21h1.218v2.21h2.984Z" fill="#333"></path><path d="M25.632 5.57v-.05H25.6l-.013.028.045.022Zm-.467.522-.032-.038.032.038Zm-1 .705-.026-.043.026.043Zm-1.156.698.025.043-.025-.043Zm-1.392.784-.042.027.025.039.04-.022-.023-.044Zm-.61-.948-.023-.044-.048.026.03.045.041-.027Zm2.61-1.518-.027-.042.028.042Zm.697-.535.034.037-.034-.037Zm.43-.535.043.025-.044-.025ZM25.01 2.4v-.05h-.05v.05h.05Zm1.242 0h.05v-.05h-.05v.05Zm.721 2.903.034-.037-.034.037Zm.808.595.027-.042-.027.042Zm1.168.705-.024.044.024-.044Zm1.318.717.042.027.03-.046-.049-.025-.023.044Zm-.596.935-.025.044.042.023.025-.04-.042-.027Zm-1.356-.759.025-.043-.025.043Zm-1.218-.723.027-.042-.027.042ZM25.644 5.57l.045-.022-.014-.028h-.031v.05Zm5.246 4.823h.05v-.05h-.05v.05Zm0 1.02v.05h.05v-.05h-.05Zm-10.517 0h-.05v.05h.05v-.05Zm0-1.02v-.05h-.05v.05h.05Zm2.984 0v.05h.05v-.05h-.05Zm0-2.211v-.05h-.05v.05h.05Zm1.218 0h.05v-.05h-.05v.05Zm0 2.21h-.05v.05h.05v-.05Zm2.113 0v.05h.05v-.05h-.05Zm0-2.21v-.05h-.05v.05h.05Zm1.218 0h.05v-.05h-.05v.05Zm0 2.21h-.05v.05h.05v-.05Zm-2.32-4.844c-.061.128-.21.296-.453.506l.065.076c.246-.211.407-.39.479-.539l-.09-.043Zm-.453.506a7.777 7.777 0 0 1-.994.7l.052.085c.424-.26.76-.496 1.007-.71l-.065-.075Zm-.994.7c-.365.227-.75.46-1.155.698l.05.086a56.46 56.46 0 0 0 1.158-.699l-.053-.085Zm-1.155.698c-.406.239-.87.5-1.391.783l.048.088c.522-.284.987-.546 1.393-.785l-.05-.086Zm-1.325.8-.61-.948-.084.054.61.948.084-.054Zm-.628-.877c.498-.267.954-.518 1.369-.753l-.05-.087c-.414.234-.869.485-1.366.752l.047.088Zm1.369-.753c.415-.236.83-.492 1.245-.768l-.055-.083c-.413.275-.826.53-1.24.764l.05.087Zm1.245-.767c.284-.188.519-.368.703-.54l-.068-.073c-.18.167-.41.344-.69.53l.055.083Zm.703-.54c.185-.173.332-.356.439-.547l-.087-.049c-.102.181-.241.355-.42.523l.068.073Zm.439-.547a1.96 1.96 0 0 0 .216-.63l-.098-.016a1.86 1.86 0 0 1-.206.597l.088.049Zm.216-.63c.039-.226.058-.49.058-.792h-.1c0 .298-.02.556-.056.776l.098.016Zm.058-.792V2.4h-.1v.947h.1Zm-.05-.897h1.242v-.1H25.01v.1Zm1.192-.05v.947h.1V2.4h-.1Zm0 .947c0 .302.017.566.05.791l.1-.014a5.37 5.37 0 0 1-.05-.777h-.1Zm.05.791c.034.229.107.441.218.637l.087-.049a1.726 1.726 0 0 1-.206-.602l-.099.014Zm.218.637c.11.196.267.385.47.565l.067-.074a2.156 2.156 0 0 1-.45-.54l-.087.05Zm.47.565c.201.181.473.381.814.6l.054-.084a6.376 6.376 0 0 1-.801-.59l-.067.074Zm.814.6c.39.252.78.487 1.17.707l.05-.087a22.6 22.6 0 0 1-1.166-.704l-.055.084Zm1.17.707c.39.219.83.458 1.32.717l.046-.088c-.488-.26-.927-.498-1.316-.716l-.05.087Zm1.3.646-.596.935.085.054.596-.935-.084-.054Zm-.529.918c-.464-.259-.916-.511-1.355-.758l-.05.087 1.356.759.05-.088Zm-1.355-.758a28.657 28.657 0 0 1-1.216-.722l-.053.085c.373.235.78.477 1.22.724l.049-.087Zm-1.217-.722a8.789 8.789 0 0 1-.975-.683l-.064.077c.25.209.58.439.987.691l.052-.085Zm-.975-.683c-.248-.206-.399-.372-.46-.5l-.09.044c.072.149.237.326.486.533l.064-.077Zm-.505-.527h-.012v.1h.012v-.1Zm5.196 4.873v1.02h.1v-1.02h-.1Zm.05.97H20.373v.1H30.89v-.1Zm-10.466.05v-1.02h-.1v1.02h.1Zm-.05-.97h2.983v-.1h-2.983v.1Zm3.033-.05V8.182h-.1v2.21h.1Zm-.05-2.161h1.218v-.1h-1.218v.1Zm1.168-.05v2.21h.1v-2.21h-.1Zm.05 2.26h2.113v-.1h-2.113v.1Zm2.163-.05v-2.21h-.1v2.21h.1Zm-.05-2.16h1.218v-.1h-1.218v.1Zm1.168-.05v2.21h.1v-2.21h-.1Zm.05 2.26h2.984v-.1h-2.984v.1Z" fill="#333"></path><path fill-rule="evenodd" popular-rule="evenodd" d="M39.338 8.353h1.173V1.587h-1.173v6.766Zm-2.13 1.276c-.336 0-.641.036-.916.106-.276.071-.511.165-.706.282a1.455 1.455 0 0 0-.45.393.76.76 0 0 0-.155.445v.35c0 .15.052.298.155.444.105.146.254.277.45.394.195.117.43.21.706.281.275.071.58.106.916.106.334 0 .64-.035.915-.106.275-.07.51-.164.706-.281.195-.117.345-.248.449-.394a.761.761 0 0 0 .156-.444v-.35a.761.761 0 0 0-.156-.445 1.454 1.454 0 0 0-.45-.393 2.685 2.685 0 0 0-.705-.282 3.689 3.689 0 0 0-.915-.106Zm-2.43-3.04h.825V3.252h-1.759V6.59h.934Zm2.43 6.854c-.527 0-1-.056-1.419-.168a3.54 3.54 0 0 1-1.065-.463 2.163 2.163 0 0 1-.67-.688 1.604 1.604 0 0 1-.234-.832v-.512c0-.3.078-.582.234-.845.155-.263.378-.492.67-.687a3.55 3.55 0 0 1 1.065-.463c.419-.113.892-.17 1.419-.17.526 0 .998.057 1.417.17.42.113.774.267 1.066.463.29.195.515.424.67.687.156.263.233.544.233.845v.512c0 .292-.077.567-.233.826-.155.258-.38.485-.67.682a3.68 3.68 0 0 1-1.066.468 5.288 5.288 0 0 1-1.417.175Zm-5.506-5.84V6.59h1.017V3.25h-.946V2.238h5.973v1.014h-1.017v3.301c.255-.016.5-.035.736-.056.235-.02.472-.052.712-.094l.096 1.013c-.432.075-.952.125-1.563.15-.61.025-1.282.038-2.016.038h-2.992Z" fill="#333"></path><path d="M39.338 8.353h-.05v.05h.05v-.05Zm1.173 0v.05h.05v-.05h-.05Zm0-6.766h.05v-.05h-.05v.05Zm-1.173 0v-.05h-.05v.05h.05Zm-3.046 8.148-.013-.048.013.048Zm-.706.282.025.043-.025-.043Zm-.45.393-.04-.029.04.03Zm0 1.239-.04.029.04-.029Zm.45.394.026-.043-.026.043Zm.706.281.012-.048-.012.048Zm1.831 0 .013.049-.013-.049Zm.706-.281.026.043-.026-.043Zm.449-.394.04.029-.04-.029Zm0-1.239.04-.028-.04.028Zm-.45-.393-.025.043.026-.043Zm-.705-.282.013-.048-.013.048Zm-2.52-3.145v.05h.05v-.05h-.05Zm0-3.34h.05V3.2h-.05v.05Zm-1.759 0V3.2h-.05v.05h.05Zm0 3.34h-.05v.05h.05v-.05Zm1.945 6.685-.013.048.013-.048Zm-1.735-1.15.043-.026-.043.025Zm0-2.19.043.026-.043-.026Zm1.735-1.15.013.048-.013-.048Zm2.836 0-.013.048.013-.048Zm1.066.463.028-.042-.028.042Zm.67.687-.043.026.043-.026Zm0 2.183-.043-.026.043.026Zm-.67.682.028.041-.028-.041Zm-1.066.468.014.049-.014-.049Zm-6.923-5.665h-.05v.05h.05v-.05Zm0-1.013v-.05h-.05v.05h.05Zm1.017 0v.05h.05v-.05h-.05Zm0-3.34h.05V3.2h-.05v.05Zm-.946 0h-.05v.05h.05v-.05Zm0-1.013v-.05h-.05v.05h.05Zm5.973 0h.05v-.05h-.05v.05Zm0 1.014v.05h.05v-.05h-.05Zm-1.017 0V3.2h-.05v.05h.05Zm0 3.301h-.05v.054l.053-.004-.003-.05Zm.736-.056.004.05-.004-.05Zm.712-.094.05-.005-.005-.053-.054.009.009.049Zm.096 1.013.008.05.046-.009-.005-.046-.05.005Zm-1.563.15.003.05-.002-.05Zm2.628.838h1.173v-.1h-1.173v.1Zm1.223-.05V1.587h-.1v6.766h.1Zm-.05-6.816h-1.173v.1h1.173v-.1Zm-1.223.05v6.766h.1V1.587h-.1Zm-2.08 7.992c-.34 0-.65.036-.929.108l.025.097c.27-.07.572-.105.904-.105v-.1Zm-.929.108a2.722 2.722 0 0 0-.719.287l.051.086c.19-.114.421-.206.693-.276l-.025-.097Zm-.719.287c-.2.119-.355.255-.464.407l.081.059c.1-.139.243-.266.434-.38l-.05-.086Zm-.464.408a.81.81 0 0 0-.165.473h.1a.71.71 0 0 1 .146-.416l-.081-.057Zm-.165.473v.35h.1v-.35h-.1Zm0 .35c0 .162.056.32.165.473l.081-.058a.71.71 0 0 1-.146-.415h-.1Zm.165.473c.109.153.264.288.464.408l.051-.086a1.412 1.412 0 0 1-.434-.38l-.081.058Zm.464.408c.2.12.44.215.72.287l.024-.097a2.62 2.62 0 0 1-.693-.276l-.05.086Zm.72.287c.279.072.589.107.928.107v-.1c-.332 0-.634-.034-.904-.104l-.025.097Zm.928.107c.338 0 .647-.035.928-.107l-.025-.097c-.271.07-.572.104-.903.104v.1Zm.928-.107c.278-.072.518-.167.718-.287l-.05-.086a2.63 2.63 0 0 1-.694.276l.026.097Zm.719-.287c.2-.12.355-.255.464-.408l-.082-.058a1.41 1.41 0 0 1-.434.38l.052.086Zm.464-.408a.811.811 0 0 0 .165-.473h-.1a.711.711 0 0 1-.147.415l.082.058Zm.165-.473v-.35h-.1v.35h.1Zm0-.35a.81.81 0 0 0-.166-.473l-.081.057a.712.712 0 0 1 .147.416h.1Zm-.166-.474a1.501 1.501 0 0 0-.464-.407l-.05.086c.19.114.334.241.433.38l.081-.059Zm-.463-.407c-.201-.12-.44-.215-.72-.287l-.024.097c.271.07.502.162.692.276l.052-.086Zm-.72-.287a3.739 3.739 0 0 0-.927-.108v.1c.33 0 .632.035.903.105l.024-.097ZM34.778 6.64h.825v-.1h-.825v.1Zm.875-.05V3.25h-.1v3.34h.1Zm-.05-3.39h-1.759v.1h1.76v-.1Zm-1.809.05v3.34h.1V3.25h-.1Zm.05 3.39h.934v-.1h-.934v.1Zm3.364 6.753c-.524 0-.992-.056-1.406-.166l-.026.096c.424.114.901.17 1.431.17v-.1Zm-1.406-.166a3.489 3.489 0 0 1-1.05-.457l-.056.083c.297.2.657.357 1.08.47l.026-.096Zm-1.05-.457a2.111 2.111 0 0 1-.655-.671l-.086.05c.16.27.388.505.685.704l.056-.083Zm-.655-.671a1.554 1.554 0 0 1-.227-.807h-.1c0 .302.08.588.24.858l.087-.052Zm-.227-.807v-.512h-.1v.512h.1Zm0-.512c0-.292.075-.564.227-.82l-.086-.05c-.16.27-.24.56-.24.87h.1Zm.227-.82c.15-.255.368-.479.655-.67l-.056-.084c-.297.2-.526.434-.685.704l.086.05Zm.655-.67a3.502 3.502 0 0 1 1.05-.457l-.026-.096c-.423.113-.783.27-1.08.47l.056.082Zm1.05-.457a5.417 5.417 0 0 1 1.406-.167v-.1c-.531 0-1.008.057-1.432.17l.026.097Zm1.406-.167c.522 0 .99.056 1.404.167l.026-.096a5.52 5.52 0 0 0-1.43-.171v.1Zm1.404.167c.416.112.765.264 1.051.456l.056-.083a3.607 3.607 0 0 0-1.08-.47l-.027.097Zm1.051.456c.286.192.504.416.655.672l.086-.051c-.16-.27-.389-.505-.685-.704l-.056.083Zm.655.672c.151.255.226.527.226.819h.1c0-.31-.08-.6-.24-.87l-.086.05Zm.226.819v.512h.1v-.512h-.1Zm0 .512c0 .283-.075.549-.226.8l.086.051c.16-.266.24-.55.24-.85h-.1Zm-.226.8c-.15.251-.37.473-.655.666l.056.083c.296-.2.525-.432.685-.698l-.086-.051Zm-.655.666a3.632 3.632 0 0 1-1.051.462l.027.097a3.73 3.73 0 0 0 1.08-.476l-.056-.083Zm-1.051.462a5.24 5.24 0 0 1-1.404.173v.1c.53 0 1.007-.058 1.43-.176l-.026-.097Zm-6.86-5.617V6.59h-.1v1.013h.1Zm-.05-.963h1.017v-.1h-1.017v.1Zm1.067-.05V3.25h-.1v3.34h.1Zm-.05-3.39h-.946v.1h.946v-.1Zm-.896.05V2.238h-.1v1.014h.1Zm-.05-.963h5.973v-.1h-5.973v.1Zm5.923-.05v1.014h.1V2.237h-.1Zm.05.964h-1.017v.1h1.017v-.1Zm-1.067.05v3.301h.1V3.251h-.1Zm.053 3.351c.255-.016.5-.035.737-.056l-.008-.1c-.236.021-.48.04-.736.057l.007.1Zm.737-.056c.237-.02.475-.053.716-.095l-.017-.098a8.582 8.582 0 0 1-.707.093l.008.1Zm.658-.14.096 1.014.1-.01-.096-1.013-.1.01Zm.137.96c-.428.074-.947.124-1.556.15l.005.1a12.276 12.276 0 0 0 1.568-.152l-.017-.098Zm-1.556.15c-.61.024-1.28.037-2.014.037v.1c.734 0 1.407-.013 2.019-.038l-.005-.1Zm-2.014.037h-2.992v.1h2.992v-.1Z" fill="#333"></path></svg>
+                    </a>
+                </div>
+                <div class="util-area">
+                    <a href="" class="link-calendar">
+                        <span class="blind">라이브 캘린더</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" focusable="false" aria-hidden="false" role="img"><g fill="#222" fill-rule="evenodd"><path fill-rule="nonzero" d="M18 0a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h16zm0 1.5H2a.5.5 0 0 0-.492.41L1.5 2v16a.5.5 0 0 0 .41.492L2 18.5h16a.5.5 0 0 0 .492-.41L18.5 18V2a.5.5 0 0 0-.41-.492L18 1.5z"></path><path d="M0 4.5h20V6H0z"></path><path fill-rule="nonzero" d="M12.97 8.97a.749.749 0 0 1 1.133.976l-.073.084-4.5 4.5a.75.75 0 0 1-.976.073l-.084-.073-2.5-2.5a.749.749 0 0 1 .976-1.133l.084.073L9 12.939l3.97-3.97z"></path></g></svg>
+                    </a>
+                    <a href="" class="link-search">
+                        <span class="blind">검색</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" focusable="false" aria-hidden="false" role="img"><g fill="#000" fill-rule="nonzero"><path d="M8.925 0a8.925 8.925 0 0 1 8.925 8.925 8.925 8.925 0 0 1-8.925 8.925A8.925 8.925 0 0 1 0 8.925 8.925 8.925 0 0 1 8.925 0zm0 1.5a7.425 7.425 0 1 0 0 14.85 7.425 7.425 0 0 0 0-14.85z"></path><path d="M14.554 14.554a.75.75 0 0 1 .977-.072l.084.072 4.937 4.938a.749.749 0 0 1-.976 1.133l-.084-.073-4.938-4.937a.749.749 0 0 1 0-1.06z"></path></g></svg>
+                    </a>
+                    <a href="" class="link-login">
+                        <span class="blind">로그인</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="21" viewBox="0 0 20 21" focusable="false" aria-hidden="false" role="img" aria-label="로그인" class="NavLink_icon_my_y54la"><defs><path id="person_svg__a" d="M0 10.5h20v10H0z"></path></defs><g fill="none" fill-rule="evenodd"><path fill="#222" d="M10 0a6 6 0 100 12 6 6 0 000-12m0 1.5c2.482 0 4.5 2.019 4.5 4.5 0 2.482-2.018 4.5-4.5 4.5A4.505 4.505 0 015.5 6c0-2.481 2.019-4.5 4.5-4.5"></path><mask id="person_svg__b" fill="#fff"><use xlink:href="#person_svg__a"></use></mask><path fill="#222" d="M1.009 20.5c.26 0 .47-.2.497-.46C1.965 15.529 5.594 12 10 12c4.407 0 8.036 3.528 8.495 8.04.026.26.236.46.497.46h.505a.5.5 0 00.502-.537c-.501-5.31-4.78-9.463-9.999-9.463-5.218 0-9.497 4.152-9.998 9.463a.5.5 0 00.502.537h.505z" mask="url(#person_svg__b)"></path></g></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <nav class="group-nav">
+            <ul class="gnb-list">
+                <li class="gnb-item"><a href="./index.html" class="link-gnb"><span>홈</span></a></li>
+                <li class="gnb-item active"><a href="./event.html" class="link-gnb"><span>이벤트</span></a></li>
+                <li class="gnb-item"><a href="./cate.html" class="link-gnb"><span>카테고리</span></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="event" class="container">
+        <!-- SC-MENU -->
+        <section class="sc-menu">
+            <nav class="swiper">
+                <ul role="tablist" class="swiper-wrapper nav-list">
+                    <li class="swiper-slide nav-item">
+                        <a href="" class="tab" aria-selected="true">네쇼라오리지널쇼</a>
+                    </li>
+                    <li class="swiper-slide nav-item">
+                        <a href="" class="tab" aria-selected="false">새로운 갤럭시</a>
+                    </li>
+                    <li class="swiper-slide nav-item">
+                        <a href="" class="tab" aria-selected="false">블루밍데이즈</a>
+                    </li>
+                    <li class="swiper-slide nav-item">
+                        <a href="" class="tab" aria-selected="false">블루밍 앵콜전</a>
+                    </li>
+                    <li class="swiper-slide nav-item">
+                        <a href="" class="tab" aria-selected="false">원더랜드 숏클립</a>
+                    </li>
+                    <li class="swiper-slide nav-item">
+                        <a href="" class="tab" aria-selected="false">원더랜드 페스타</a>
+                    </li>
+                    <li class="swiper-slide nav-item">
+                        <a href="" class="tab" aria-selected="false">숏클리버</a>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+        <!-- SC-EXHIBITION -->
+        <section class="sc-exhibition">
+            <div class="text-area">
+                <div class="text-box">
+                    <em class="cate">오리지널쇼 기획전</em>
+                    <strong class="title">쇼핑라이브 오리지널쇼<br>프리미엄라이브 총집합!</strong>
+                    <span class="desc">즐거움과 구매혜택을 동시에</span>
+                    <strong class="date">01. 20 - 12. 31</strong>
+                </div>
+                <button type="button" class="btn-share" aria-label="공유하기 버튼">
+                    <svg width="17" height="17" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" focusable="false" aria-hidden="true" class="ExhibitionBannerSection_icon_7K0jC"><path clip-rule="evenodd" d="M9.041 2.573a.232.232 0 0 0-.036.128v2.591H6.738c-1.598 0-2.858.739-3.785 1.844-1.146 1.366-1.793 3.283-1.952 5.12-.005.056.01.11.04.153.036.051.101.07.205.091a.212.212 0 0 0 .085-.034.231.231 0 0 0 .082-.1c.032-.08.553-1.31 2.066-2.153.755-.42 1.762-.746 3.087-.764h2.385l.053 2.656a.24.24 0 0 0 .039.124c.03.047.094.06.22.094a.218.218 0 0 0 .095-.049l5.243-4.7a.234.234 0 0 0 .076-.173.23.23 0 0 0-.076-.174l-5.243-4.7c-.052-.047-.132-.033-.317.046Z" stroke="#fff"></path></svg>
+                </button>
+            </div>
+        </section>
+        <!-- WRAP -->
+        <section class="wrap1">
+            <h2 class="blind">라이브쇼</h2>
+            <strong class="s-title">꿀잼&개이득 오리지널쇼<br>놓치기 전에 알림 설정</strong>
+            <!-- SECTION EXPECTED -->
+            <section class="section expected">
+                <div class="common-inner">
+                    <div class="group-title">
+                        <h3 class="headline">라이브 예정</h3>
+                    </div>
+                    <div class="group-content">
+                        <ul class="content-list">
+                            <li class="content-item">
+                                <a href="" class="link-sale">
+                                    <div class="img-area">
+                                        <div class="time-box">
+                                            <em class="date">2월 8일</em>
+                                            <em class="time">21:00</em>
+                                        </div>
+                                        <div class="thumb-box">
+                                            <div class="img-wrap"><img src="./assets/images/event_expected1_s.png"></div>
+                                            <div class="text-wrap">
+                                                <p class="title">옵션1. [프레드릭콘스탄트] FC-303NB5B6 클래식 인덱스 오토메틱 /백화점AS가능</p>
+                                                <strong class="price">789,600원</strong>
+                                            </div>
+                                        </div>
+                                        <div class="img-box">
+                                            <img src="./assets/images/event_expected1.png">
+                                        </div>
+                                    </div>
+                                    <div class="text-area">
+                                        <p class="title">워치인사이드 프레드릭콘스탄트 추천 베스트 워치</p>
+                                    </div>
+                                </a>
+                                <a href="" class="market-area"><span>워치인사이드</span></a>
+                            </li>
+                            <li class="content-item">
+                                <a href="" class="link-sale">
+                                    <div class="img-area">
+                                        <div class="time-box">
+                                            <em class="date">2월 27일</em>
+                                            <em class="time">19:30</em>
+                                        </div>
+                                        <div class="thumb-box">
+                                            <div class="img-wrap"><img src="./assets/images/notice_s1.jfif"></div>
+                                            <div class="text-wrap">
+                                                <p class="title">[시크헤라] 레티카에스닉블라우스-388933</p>
+                                                <strong class="price">42,600원</strong>
+                                            </div>
+                                        </div>
+                                        <div class="img-box">
+                                            <img src="./assets/images/notice1.jpg">
+                                        </div>
+                                    </div>
+                                    <div class="text-area">
+                                        <p class="title">[블루밍데이즈] 시크헤라 봄 신상 첫 라방</p>
+                                    </div>
+                                </a>
+                                <a href="" class="market-area"><span>시크헤라</span></a>
+                            </li>
+                            <li class="content-item">
+                                <a href="" class="link-sale">
+                                    <div class="img-area">
+                                        <div class="time-box">
+                                            <em class="date">3월 28일</em>
+                                            <em class="time">14:00</em>
+                                        </div>
+                                        <div class="thumb-box">
+                                            <div class="img-wrap"><img src="./assets/images/notice_s2.jpg"></div>
+                                            <div class="text-wrap">
+                                                <p class="title">브람스 루카 안마 의자 BRAMS-S3500</p>
+                                                <strong class="price">1,249,000원</strong>
+                                            </div>
+                                        </div>
+                                        <div class="img-box">
+                                            <img src="./assets/images/notice2.jpg">
+                                        </div>
+                                    </div>
+                                    <div class="text-area">
+                                        <p class="title">브람스 루카 부모님 선물 추천, 가성비 안마 의자</p>
+                                    </div>
+                                </a>
+                                <a href="" class="market-area"><span>앱스토리몰</span></a>
+                            </li>
+                            <li class="content-item">
+                                <a href="" class="link-sale">
+                                    <div class="img-area">
+                                        <div class="time-box">
+                                            <em class="date">3월 29일</em>
+                                            <em class="time">13:30</em>
+                                        </div>
+                                        <div class="thumb-box">
+                                            <div class="img-wrap"><img src="./assets/images/notice_s3.jpg"></div>
+                                            <div class="text-wrap">
+                                                <p class="title">도드람한돈 냉장 삼겹살 구이용 500g</p>
+                                                <strong class="price">11,500</strong>
+                                            </div>
+                                        </div>
+                                        <div class="img-box">
+                                            <img src="./assets/images/notice3.jpg">
+                                        </div>
+                                    </div>
+                                    <div class="text-area">
+                                        <p class="title">[도드람한돈] 삼겹살/목살 특별가</p>
+                                    </div>
+                                </a>
+                                <a href="" class="market-area"><span>신세계라이브쇼핑</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="group-link">
+                        <a href="" class="live-more">
+                            <span><span class="bold">전체 라이브</span>더보기</span>
+                            <svg width="7" height="13" viewBox="0 0 7 13" fill="none" xmlns="http://www.w3.org/2000/svg" focusable="false" aria-hidden="false" role="img" class="RoundMoreButton_icon_arrow_right_WCQyI" aria-label="더보기"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.222 6.5.112 1.39.888.61l5.89 5.89-5.89 5.888-.778-.778 5.111-5.11Z" fill="#fff"></path></svg>
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <!-- SECTION LAST -->
+            <section class="section expected last">
+                <div class="common-inner">
+                    <div class="group-title">
+                        <h3 class="headline">지난 라이브 다시보기</h3>
+                    </div>
+                    <div class="group-content">
+                        <ul class="content-list">
+                            <li class="content-item">
+                                <a href="" class="link-sale">
+                                    <div class="img-area">
+                                        <div class="view-box">
+                                            <i class="icon-view">
+                                                <svg width="11" height="11" xmlns="http://www.w3.org/2000/svg" focusable="false" aria-hidden="true" class="VideoViewCount_icon_view_oRS93"><path d="M5.286 2.514c-2.256 0-4.153 1.28-4.715 2.75.562 1.47 2.46 2.75 4.715 2.75S9.438 6.734 10 5.264c-.562-1.47-2.46-2.75-4.714-2.75zm0 4.479c-.978 0-1.77-.774-1.77-1.729 0-.954.792-1.728 1.77-1.728s1.77.774 1.77 1.728c0 .955-.792 1.729-1.77 1.729zm0-2.395a.675.675 0 0 0-.683.666c0 .368.306.667.683.667a.675.675 0 0 0 .682-.667.675.675 0 0 0-.682-.666z" fill="#FFF"></path></svg>
+                                            </i>
+                                            <span class="count">45만 시청</span>
+                                        </div>
+                                        <div class="thumb-box">
+                                            <div class="img-wrap"><img src="./assets/images/event_expected1_s.png"></div>
+                                            <div class="text-wrap">
+                                                <p class="title">옵션1. [프레드릭콘스탄트] FC-303NB5B6 클래식 인덱스 오토메틱 /백화점AS가능</p>
+                                                <strong class="price">789,600원</strong>
+                                            </div>
+                                        </div>
+                                        <div class="img-box">
+                                            <img src="./assets/images/event_expected1.png">
+                                        </div>
+                                    </div>
+                                    <div class="text-area">
+                                        <p class="title">워치인사이드 프레드릭콘스탄트 추천 베스트 워치</p>
+                                    </div>
+                                </a>
+                                <a href="" class="market-area"><span>워치인사이드</span></a>
+                            </li>
+                            <li class="content-item">
+                                <a href="" class="link-sale">
+                                    <div class="img-area">
+                                        <div class="view-box">
+                                            <i class="icon-view">
+                                                <svg width="11" height="11" xmlns="http://www.w3.org/2000/svg" focusable="false" aria-hidden="true" class="VideoViewCount_icon_view_oRS93"><path d="M5.286 2.514c-2.256 0-4.153 1.28-4.715 2.75.562 1.47 2.46 2.75 4.715 2.75S9.438 6.734 10 5.264c-.562-1.47-2.46-2.75-4.714-2.75zm0 4.479c-.978 0-1.77-.774-1.77-1.729 0-.954.792-1.728 1.77-1.728s1.77.774 1.77 1.728c0 .955-.792 1.729-1.77 1.729zm0-2.395a.675.675 0 0 0-.683.666c0 .368.306.667.683.667a.675.675 0 0 0 .682-.667.675.675 0 0 0-.682-.666z" fill="#FFF"></path></svg>
+                                            </i>
+                                            <span class="count">45만 시청</span>
+                                        </div>
+                                        <div class="thumb-box">
+                                            <div class="img-wrap"><img src="./assets/images/event_expected1_s.png"></div>
+                                            <div class="text-wrap">
+                                                <p class="title">옵션1. [프레드릭콘스탄트] FC-303NB5B6 클래식 인덱스 오토메틱 /백화점AS가능</p>
+                                                <strong class="price">789,600원</strong>
+                                            </div>
+                                        </div>
+                                        <div class="img-box">
+                                            <img src="./assets/images/event_expected1.png">
+                                        </div>
+                                    </div>
+                                    <div class="text-area">
+                                        <p class="title">워치인사이드 프레드릭콘스탄트 추천 베스트 워치</p>
+                                    </div>
+                                </a>
+                                <a href="" class="market-area"><span>워치인사이드</span></a>
+                            </li>
+                            <li class="content-item">
+                                <a href="" class="link-sale">
+                                    <div class="img-area">
+                                        <div class="view-box">
+                                            <i class="icon-view">
+                                                <svg width="11" height="11" xmlns="http://www.w3.org/2000/svg" focusable="false" aria-hidden="true" class="VideoViewCount_icon_view_oRS93"><path d="M5.286 2.514c-2.256 0-4.153 1.28-4.715 2.75.562 1.47 2.46 2.75 4.715 2.75S9.438 6.734 10 5.264c-.562-1.47-2.46-2.75-4.714-2.75zm0 4.479c-.978 0-1.77-.774-1.77-1.729 0-.954.792-1.728 1.77-1.728s1.77.774 1.77 1.728c0 .955-.792 1.729-1.77 1.729zm0-2.395a.675.675 0 0 0-.683.666c0 .368.306.667.683.667a.675.675 0 0 0 .682-.667.675.675 0 0 0-.682-.666z" fill="#FFF"></path></svg>
+                                            </i>
+                                            <span class="count">45만 시청</span>
+                                        </div>
+                                        <div class="thumb-box">
+                                            <div class="img-wrap"><img src="./assets/images/event_expected1_s.png"></div>
+                                            <div class="text-wrap">
+                                                <p class="title">옵션1. [프레드릭콘스탄트] FC-303NB5B6 클래식 인덱스 오토메틱 /백화점AS가능</p>
+                                                <strong class="price">789,600원</strong>
+                                            </div>
+                                        </div>
+                                        <div class="img-box">
+                                            <img src="./assets/images/event_expected1.png">
+                                        </div>
+                                    </div>
+                                    <div class="text-area">
+                                        <p class="title">워치인사이드 프레드릭콘스탄트 추천 베스트 워치</p>
+                                    </div>
+                                </a>
+                                <a href="" class="market-area"><span>워치인사이드</span></a>
+                            </li>
+                            <li class="content-item">
+                                <a href="" class="link-sale">
+                                    <div class="img-area">
+                                        <div class="view-box">
+                                            <i class="icon-view">
+                                                <svg width="11" height="11" xmlns="http://www.w3.org/2000/svg" focusable="false" aria-hidden="true" class="VideoViewCount_icon_view_oRS93"><path d="M5.286 2.514c-2.256 0-4.153 1.28-4.715 2.75.562 1.47 2.46 2.75 4.715 2.75S9.438 6.734 10 5.264c-.562-1.47-2.46-2.75-4.714-2.75zm0 4.479c-.978 0-1.77-.774-1.77-1.729 0-.954.792-1.728 1.77-1.728s1.77.774 1.77 1.728c0 .955-.792 1.729-1.77 1.729zm0-2.395a.675.675 0 0 0-.683.666c0 .368.306.667.683.667a.675.675 0 0 0 .682-.667.675.675 0 0 0-.682-.666z" fill="#FFF"></path></svg>
+                                            </i>
+                                            <span class="count">45만 시청</span>
+                                        </div>
+                                        <div class="thumb-box">
+                                            <div class="img-wrap"><img src="./assets/images/event_expected1_s.png"></div>
+                                            <div class="text-wrap">
+                                                <p class="title">옵션1. [프레드릭콘스탄트] FC-303NB5B6 클래식 인덱스 오토메틱 /백화점AS가능</p>
+                                                <strong class="price">789,600원</strong>
+                                            </div>
+                                        </div>
+                                        <div class="img-box">
+                                            <img src="./assets/images/event_expected1.png">
+                                        </div>
+                                    </div>
+                                    <div class="text-area">
+                                        <p class="title">워치인사이드 프레드릭콘스탄트 추천 베스트 워치</p>
+                                    </div>
+                                </a>
+                                <a href="" class="market-area"><span>워치인사이드</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="group-link">
+                        <a href="" class="live-more">
+                            <span><span class="bold">지난 라이브</span>더보기</span>
+                            <svg width="7" height="13" viewBox="0 0 7 13" fill="none" xmlns="http://www.w3.org/2000/svg" focusable="false" aria-hidden="false" role="img" class="RoundMoreButton_icon_arrow_right_WCQyI" aria-label="더보기"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.222 6.5.112 1.39.888.61l5.89 5.89-5.89 5.888-.778-.778 5.111-5.11Z" fill="#fff"></path></svg>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <!-- SECTION EXTRACT -->
+        <section class="section expected extract">
+            <h2 class="blind">라이브쇼츠</h2>
+            <div class="group-title">
+                <strong class="s-title">쇼핑은 숏하게!<br>지난 방송 액기스 모음</strong>
+            </div>
+            <div class="group-content">
+                <div class="common-inner">
+                    <ul class="content-list">
+                        <li class="content-item">
+                            <a href="" class="link-sale">
+                                <div class="img-area">
+                                    <div class="view-box">
+                                        <i class="icon-clip"></i>
+                                        <span class="count">2,734 시청</span>
+                                    </div>
+                                    <div class="brand-box">
+                                        <img src="./assets/images/event_short_brand.jfif">
+                                    </div>
+                                    <div class="img-box">
+                                        <img src="./assets/images/event_short.jfif">
+                                    </div>
+                                </div>
+                                <div class="text-area">
+                                    <p class="title">앵콜 핫딜! 앤티앤스프레즐 금액권 할인</p>
+                                </div>
+                            </a>
+                            <a href="" class="market-area"><span>리코</span></a>
+                        </li>
+                        <li class="content-item">
+                            <a href="" class="link-sale">
+                                <div class="img-area">
+                                    <div class="view-box">
+                                        <i class="icon-clip"></i>
+                                        <span class="count">2,734 시청</span>
+                                    </div>
+                                    <div class="brand-box">
+                                        <img src="./assets/images/event_short_brand.jfif">
+                                    </div>
+                                    <div class="img-box">
+                                        <img src="./assets/images/event_short.jfif">
+                                    </div>
+                                </div>
+                                <div class="text-area">
+                                    <p class="title">앵콜 핫딜! 앤티앤스프레즐 금액권 할인</p>
+                                </div>
+                            </a>
+                            <a href="" class="market-area"><span>리코</span></a>
+                        </li>
+                        <li class="content-item">
+                            <a href="" class="link-sale">
+                                <div class="img-area">
+                                    <div class="view-box">
+                                        <i class="icon-clip"></i>
+                                        <span class="count">2,734 시청</span>
+                                    </div>
+                                    <div class="brand-box">
+                                        <img src="./assets/images/event_short_brand.jfif">
+                                    </div>
+                                    <div class="img-box">
+                                        <img src="./assets/images/event_short.jfif">
+                                    </div>
+                                </div>
+                                <div class="text-area">
+                                    <p class="title">앵콜 핫딜! 앤티앤스프레즐 금액권 할인</p>
+                                </div>
+                            </a>
+                            <a href="" class="market-area"><span>리코</span></a>
+                        </li>
+                        <li class="content-item">
+                            <a href="" class="link-sale">
+                                <div class="img-area">
+                                    <div class="view-box">
+                                        <i class="icon-clip"></i>
+                                        <span class="count">2,734 시청</span>
+                                    </div>
+                                    <div class="brand-box">
+                                        <img src="./assets/images/event_short_brand.jfif">
+                                    </div>
+                                    <div class="img-box">
+                                        <img src="./assets/images/event_short.jfif">
+                                    </div>
+                                </div>
+                                <div class="text-area">
+                                    <p class="title">앵콜 핫딜! 앤티앤스프레즐 금액권 할인</p>
+                                </div>
+                            </a>
+                            <a href="" class="market-area"><span>리코</span></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="group-link">
+                    <a href="" class="live-more">
+                        <span><span class="bold">전체 라이브</span>더보기</span>
+                        <svg width="7" height="13" viewBox="0 0 7 13" fill="none" xmlns="http://www.w3.org/2000/svg" focusable="false" aria-hidden="false"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.222 6.5.112 1.39.888.61l5.89 5.89-5.89 5.888-.778-.778 5.111-5.11Z" fill="#303038"></path></svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="group-notice">
+            <div class="title-area">
+                <strong>법적고지</strong>
+                <a href="" class="link-more">
+                    <span>자세히보기</span>
+                    <svg width="7" height="12.5" viewBox="0 0 7 13" fill="none" xmlns="http://www.w3.org/2000/svg" focusable="false" aria-hidden="true"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.222 6.5.112 1.39.888.61l5.89 5.89-5.89 5.888-.778-.778 5.111-5.11Z" fill="#929294"></path></svg>
+                </a>
+            </div>
+            <div class="desc-area">
+                <p>
+                    네이버㈜는 통신판매중개자이며, 통신판매의 당사자가 아닙니다. 상품, 상품정보, 거래에 관한 의무와 책임은 판매자에게 있습니다.
+                </p>
+            </div>
+        </div>
+        <div class="group-link">
+            <a href="" class="link-login">로그인</a>
+            <a href="" class="link-shopping">네이버 쇼핑</a>
+            <a href="" class="link-shopping">N쇼핑라이브 관리툴</a>
+        </div>
+        <address class="group-info">
+            <button type="button" class="btn-info">
+                <span>네이버(주) 사업자정보</span>
+                <svg width="5" height="10" viewBox="0 0 7 13" fill="none" xmlns="http://www.w3.org/2000/svg" focusable="false" aria-hidden="true"><path d="M5.222 6.5.112 1.39.888.61l5.89 5.89-5.89 5.888-.778-.778 5.111-5.11Z" fill="#303038"></path></svg>
+            </button>
+            <div class="btn-wrap">
+                <ul class="info-list">
+                    <li class="info-item">
+                        <span>대표이사</span>
+                        <span>최수연</span>
+                    </li>
+                    <li class="info-item">
+                        <span>주소</span>
+                        <span>경기도 성남시 분당구 정자일로 95
+                            NAVER 1784, 13561</span>
+                    </li>
+                    <li class="info-item">
+                        <span>문의</span>
+                        <a href="">1:1문의 바로가기</a>
+                    </li>
+                    <li class="info-item">
+                        <span>이메일</span>
+                        <span>helpcustomer@naver.com</span>
+                    </li>
+                    <li class="info-item">
+                        <span>사업자등록번호</span>
+                        <span>220-81-62517</span>
+                    </li>
+                    <li class="info-item">
+                        <span>통신판매업신고번호</span>
+                        <span>제2006-경기성남-0692호</span>
+                    </li>
+                    <li class="info-item">
+                        <span>호스팅 서비스 제공</span>
+                        <span>NAVER Cloud</span>
+                    </li>
+                </ul>
+            </div>
+        </address>
+        <address class="group-addr">
+            <p>
+                <a href="">사업자정보 확인</a>
+                <a href="">네이버약관</a>
+                <a href="">네이버페이 이용약관</a>
+            </p>
+            <p>
+                <a href="">쇼핑라이브 이용약관</a>
+                <a href=""><strong>개인정보처리방침</strong></a>
+                <a href="">안전거래센터</a>
+            </p>
+            <p><a href="tel:1588-3819">대표전화 1588-3819</a></p>
+        </address>
+        <h2 class="group-logo">
+            <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="67" height="13" viewBox="0 0 67 13" focusable="false" aria-hidden="false" role="img" aria-label="네이버"><g fill="#B3BBC1" fill-rule="evenodd"><path d="m19.28 0-5.04 12.854h4.285l.608-1.701h4.832l.608 1.7h4.285L23.818 0H19.28zm2.269 4.05 1.437 4.015h-2.874l1.437-4.015zM42.594 0v12.854h10.144V9.703h-6.049V7.971h5.86V4.883h-5.86V3.15h5.923V0zm-5.608 0-3.024 8.452L30.937 0h-4.284l5.04 12.854h4.537L41.271 0zM8.758 0v6.88L3.97 0H0v12.854h4.159v-6.88l4.788 6.88h3.97V0zM60.928 5.986h-2.204v-2.71h2.206a1.355 1.355 0 1 1-.002 2.71zm2.8 2.458.39-.163c1.494-.625 2.253-1.978 2.253-3.695 0-1.624-.592-2.825-1.76-3.57C63.525.323 62.118 0 60.181 0h-5.428v12.854h4.033V9.262h1.449l2.457 3.592h4.285l-3.249-4.41z"></path></g></svg></a>
+        </h2>
+    </footer>
+</body>
+</html>

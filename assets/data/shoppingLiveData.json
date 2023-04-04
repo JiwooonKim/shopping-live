@@ -1,0 +1,96 @@
+{
+    "items":[
+        {
+            "id":"0",
+            "snippet":{
+                "thumbnail":{
+                    "side":"./assets/images/live_thumb_s1.png",
+                    "normal":"./assets/images/live_thumb_n1.jpg",
+                    "time":"오전 10:00"
+                },
+                "time":"오늘 오전 10시",
+                "title":"가성비 대박 전북투어패스",
+                "wait":"12,103",
+                "selected":"true"
+            }
+        },
+        {
+            "id":"1",
+            "snippet":{
+                "thumbnail":{
+                    "side":"./assets/images/live_thumb_s2.jpg",
+                    "normal":"./assets/images/live_thumb_n2.jpg",
+                    "time":"오전 11:00"
+                },
+                "time":"오늘 오전 11시",
+                "title":"Only 라이브 사은품 증정",
+                "wait":"32,100" 
+            }
+        },
+        {
+            "id":"2",
+            "snippet":{
+                "thumbnail":{
+                    "side":"./assets/images/live_thumb_s3.jpg",
+                    "normal":"./assets/images/live_thumb_n3.jpg",
+                    "time":"오후 3:00"
+                },
+                "time":"오늘 오후 3시",
+                "title":"봄향기 가득한 피크닉 라이브",
+                "wait":"28,000" 
+            }
+        },
+        {
+            "id":"3",
+            "snippet":{
+                "thumbnail":{
+                    "side":"./assets/images/live_thumb_s4.jpg",
+                    "normal":"./assets/images/live_thumb_n4.jpg",
+                    "time":"오후 5:00"
+                },
+                "time":"오늘 오후 5시",
+                "title":"제로스트릿 첫 브랜드데이!",
+                "wait":"15,700" 
+            }
+        },
+        {
+            "id":"4",
+            "snippet":{
+                "thumbnail":{
+                    "side":"./assets/images/live_thumb_s5.jpg",
+                    "normal":"./assets/images/live_thumb_n5.jpg",
+                    "time":"오후 8:00"
+                },
+                "time":"오늘 오후 8시",
+                "title":"랑콤 브라이트닝 특집 ",
+                "wait":"27,900" 
+            }
+        },
+        {
+            "id":"5",
+            "snippet":{
+                "thumbnail":{
+                    "side":"./assets/images/live_thumb_s6.jpg",
+                    "normal":"./assets/images/live_thumb_n6.jpg",
+                    "time":"3월 20일"
+                },
+                "time":"내일 오전 11시",
+                "title":"라이브중 가장 강력한 혜택!",
+                "wait":"72,300" 
+            }
+        },
+        {
+            "id":"6",
+            "snippet":{
+                "thumbnail":{
+                    "side":"./assets/images/live_thumb_s7.jpg",
+                    "normal":"./assets/images/live_thumb_n7.jpg",
+                    "time":"3월 20일"
+                },
+                "time":"내일 오후 2시",
+                "title":"블루밍데이즈 특가할인",
+                "wait":"212,100" 
+            }
+        }
+    ]
+}

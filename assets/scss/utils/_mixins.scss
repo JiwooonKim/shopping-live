@@ -1,0 +1,92 @@
+//position
+@mixin flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin flexCenterHorizontal {
+    display: flex;
+    justify-content: center;
+}
+@mixin flexCenterVertical {
+    display: flex;
+    align-items: center;
+}
+@mixin positionCenter {
+    position: absolute;
+    top: 50%; left: 50%; 
+    transform: translate(-50%, -50%);
+}
+@mixin positionCenterHorizontal {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+@mixin positionCenterVertical {
+    position: absolute;
+    top: 50%; 
+    transform: translateY(-50%);
+}
+
+//style - font
+@mixin fontSize11 { font-size: 11px; } 
+@mixin fontSize12 { font-size: 12px; } 
+@mixin fontSize13 { font-size: 13px; } 
+@mixin fontSize14 { font-size: 14px; } 
+@mixin fontSize15 { font-size: 15px; } 
+@mixin fontSize16 { font-size: 16px; } 
+@mixin fontSize17 { font-size: 17px; } 
+@mixin fontSize18 { font-size: 18px; } 
+@mixin fontSize19 { font-size: 19px; } 
+@mixin fontSize20 { font-size: 20px; } 
+@mixin fontSize21 { font-size: 21px; } 
+@mixin fontSize22 { font-size: 22px; } 
+@mixin fontSize23 { font-size: 23px; } 
+
+// STYLE
+@mixin fontStyle1 {
+    font-family: MalgunGothic; letter-spacing: -0.3px;
+}
+@mixin font-title {  }
+@mixin scrollbarNone {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+
+    &::-webkit-scrollbar { display:none; /* Chrome , Safari , Opera */ }
+}
+@mixin gnbItemActive {
+    color: $color-point;
+    font-weight: bold;
+    
+    .link-gnb span { 
+        position: relative; 
+        display: inline-block; 
+        height: 100%;
+        color: $color-point;
+        font-weight: bold;
+    }
+    .link-gnb span::after {
+        content: '';
+        position: absolute;
+        right: -10px;
+        bottom: 0;
+        left: -10px;
+        height: 2px;
+        background-color: $color-point;
+    }
+}
+
+
+//ellipsis
+@mixin ellip1 {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+@mixin ellip2 {
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}

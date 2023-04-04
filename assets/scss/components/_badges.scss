@@ -1,0 +1,84 @@
+// 시청 수 표시
+.view-box {
+    position: absolute;
+    top: 8px; left: 8px;
+    z-index: 1;
+    display: inline-flex;
+    align-items: center;
+    height: 17px;
+    border-radius: 25px;
+    background-color: rgba(34,34,37,.3);
+
+    //숏클립 아이콘
+    .icon-clip {
+        display: inline-block;
+        width: 27px;
+        height: 17px;
+        background-image: url(../images/sp_shortclipbadge.png);
+        background-size: 100% 21000%;
+        animation: shortclip 3.5s steps(210) infinite;
+        vertical-align: top;
+    }
+    @keyframes shortclip {
+        0% { background-position: 0px 3570px; }
+        100% { background-position: 0px 0px; }
+    }
+    //뷰 아이콘
+    .icon-view {
+        padding-left: 4px;
+    }
+    // 라이브 아이콘
+    .icon-live {
+        display: inline-block;
+        overflow: hidden;
+        width: 32px;
+        height: 17px;
+        background-image: url(../images/livebadge.png);
+        background-size: 100% 30000%;
+        animation: livebadge 5s steps(300) infinite;
+        vertical-align: top;
+    }
+    @keyframes livebadge {
+        0% {
+            background-position: 0px 5100px;
+        }
+        100% { background-position: 0px 0px; }
+    }
+    //시청자수 표기
+    .count {
+        padding: 0 7px 0 3px;
+        line-height: 1.7;
+        font-size: 10px;
+        font-weight: 500;
+        color: #fff;
+        z-index: 2;
+    }
+}
+
+//순위 뱃지
+.ranking-box {
+    position: absolute;
+    top: 10px; left: 10px;
+    width: 28px;
+    margin-right: auto;
+    border-radius: 5px;
+    background-color: $color-black1;
+    line-height: 1.65;
+    font-size: 17px;
+    font-style: italic;
+    color: $color-white1;
+    text-align: center;
+    z-index: 4;
+    font-weight: 800;
+}
+
+.brand-box {
+    @include positionCenterHorizontal;
+    bottom: 10px;
+    background-color: $color-white1;
+    border-radius: 50%;
+    width: 36px; height: 36px;
+    text-align: center;
+    z-index: 1;
+    overflow: hidden;
+}

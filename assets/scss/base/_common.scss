@@ -1,0 +1,119 @@
+.blind {
+    position: absolute;
+    width: 1px; height: 1px;
+    margin: -1px;
+    clip: rect(0 0 0 0);
+}
+
+.common-inner { padding: 0 20px; }
+
+.container { padding-top: 92px; }
+
+.section {
+    border-top: 1px solid #efeff0;
+    padding: 30px 0;
+
+    .group-title {
+        @include flexCenterVertical;
+        margin-bottom: 10px;
+
+        .link-more {
+            @include flexCenterVertical;
+            margin-left: auto;
+            line-height: 1.43;
+            font-size: 14px;
+            color: $color-gray1;
+            letter-spacing: -0.3px;
+        }
+    }
+    .group-menu { padding-left: 20px; }
+    .group-slide { padding-left: 20px; }
+    .info-wrap {
+        .discount { 
+            @include fontStyle1;
+            font-weight: bold; color: #f4361e; 
+        }
+        .price { 
+            strong { @include fontStyle1; font-weight: bold; margin-right: 2px; }
+            color: $color-black2; 
+            font-weight: normal;
+        }
+    }
+    .img-box {
+        position: relative;
+        border-radius: 8px;
+        overflow: hidden;
+        border-radius: 8px;
+        padding-top: 166%;
+    }
+    .img-box img, .img-box video {
+        position: absolute;
+        top: 0; left: 0;
+        width: 100%; height: 100%;
+        object-fit: cover;
+    }
+    .thumb-box {
+        display: flex;
+        position: absolute;
+        left: 10px; right: 10px; bottom: 10px;
+        z-index: 2;
+        border-radius: 5px;
+        background-color: rgba(34,34,37,.6);
+        overflow: hidden;
+
+        img { width: 40px; height: 40px; }
+        .text-wrap {
+            @include flexCenterHorizontal;
+            gap: 2px;
+            flex-direction: column;
+            width: calc(100% - 40px);
+            padding: 2px 5px 0 8px;
+            font-size: 11px;
+        }
+        .title {
+            @include ellip1;
+            color: $color-white2;
+        }
+        .price {
+            color: $color-white1;
+            font-weight: bold;
+            line-height: 1.2;
+        }
+    }
+    .market-area {
+        @include flexCenterVertical;
+        width: 100%;
+        height: 30px;
+
+        .img-box {
+            position: relative;
+            width: 20px; height: 20px;
+            padding-top: 0;
+            overflow: hidden;
+            border-radius: 50%;
+            margin-right: 5px;
+        }
+        img { width: 100%; height: 100%; object-fit: cover; }
+        .name-box {
+            flex: 1;
+            width: calc(100% - 30px);
+            line-height: 1.2;
+            font-size: 12px;
+        }
+        .name-box span {
+            @include ellip1;
+            display: block;
+            padding-right: 10px;
+            color: $color-gray1;
+        }
+    }
+}
+.headline {
+    @include flexCenterVertical;
+    @include fontStyle1;
+    font-size: 18px;
+    font-weight: bold;
+    color: $color-black1;
+    height: 38px;
+}
+
