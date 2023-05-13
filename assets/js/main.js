@@ -1,4 +1,19 @@
 $(function(){
+
+    // 카테고리 스와이퍼 
+    const swiper1 = new Swiper("#home .cate-slide", {
+        pagination: {
+            el: ".swiper-pagination",
+        }
+    });
+
+    // 라이브찬스 슬라이드
+    const swiper2 = new Swiper(".section.chance .group-slide", {
+        slidesPerView: "auto",
+        spaceBetween: 20,
+        freeMode: true,
+    });
+
     // 시청순/구매순 버튼
     $('.select-area').click(function(){
         $(this).toggleClass('on');
@@ -10,6 +25,32 @@ $(function(){
     $('.button-wrap .btn-close').click(function(){
         $(this).parent('.button-wrap').removeClass('on');
     })
+
+    //현재 시간 구하는 함수
+    function currentTime() {
+        const current = new Date();
+        let currentMonth = current.getMonth()+1;
+        let currentDay = current.getDate();
+        let currentHour = current.getHours();
+        let localHour = currentHour > 12 ? currentHour - 12 : currentHour;
+        let currentMin = current.getMinutes();
+
+        if ( currentHour <= 12 ) {
+            time = `${currentMonth}월 ${currentDay}일 오전 ${localHour}시 ${currentMin}분 기준`;
+        } else if (  ) {
+
+        } else {
+            time = `${currentMonth}월 ${currentDay}일 오후 ${localHour}시 ${currentMin}분 기준`;
+        }
+
+        html = `<span class="time">${time}</span>`;
+        $('.section.popular .time').html(html);
+    }
+    currentTime();
+
+    setInterval(()=>{
+        currentTime();
+    },60000)
 
     /**
      * 화제의 쇼핑라이브 데이터 바인딩
@@ -69,6 +110,15 @@ $(function(){
     }
     liveMain(0);
 
+    // 아이템 클릭했을 때 해당 아이템을 가져옴
+    $(document).on('click','.section.hot .live-item .live',function(e){
+        e.preventDefault();
+        let id = $(this).attr('href');
+        const parent = $(this).parent('.live-item')
+        parent.attr('aria-selected','true').siblings('.live-item').attr('aria-selected','false');
+        liveMain(id);
+    })
+
     /**
      * 인기 급상습 숏클립 JSON
      * : 리스트를 5개까지만 보여주도록 함.
@@ -106,15 +156,11 @@ $(function(){
         $('#popularList').html(html);
     })
 
-
-    // 아이템 클릭했을 때 해당 아이템을 가져옴
-    $(document).on('click','.section.hot .live-item .live',function(e){
-        e.preventDefault();
-        let id = $(this).attr('href');
-        const parent = $(this).parent('.live-item')
-        parent.attr('aria-selected','true').siblings('.live-item').attr('aria-selected','false');
-        liveMain(id);
-    })
+    const swiper3 = new Swiper(".section.popular .group-slide", {
+        slidesPerView: "auto",
+        spaceBetween: 10,
+        freeMode: true
+    });
 
     // 탭메뉴 라이브1 JSON
     function typeLive(sort){
@@ -157,6 +203,11 @@ $(function(){
         $(this).attr('aria-selected','true');
         typeLive(sort);
     })
+
+    const swiper4 = new Swiper(".section.type .group-menu", {
+        slidesPerView: "auto",
+        freeMode: true,
+    });
 
 
     /**
@@ -222,6 +273,23 @@ $(function(){
         trendLive(sort);
     })
 
+    const swiper5 = new Swiper(".section.trend .group-menu", {
+        slidesPerView: "auto",
+        spaceBetween: 8,
+        freeMode: true,
+    });
+    const swiper6 = new Swiper(".section.trend .group-slide", {
+        slidesPerView: "auto",
+        spaceBetween: 10,
+        freeMode: true,
+    });
+
+    //원더랜드 페스타
+    const swiper7 = new Swiper(".section.theme .group-slide", {
+        slidesPerView: "auto",
+        spaceBetween: 10,
+    });
+
     // 카테고리별 아이템 리스트 JSON
     function categoryList(sort,frame){
         fetch('./assets/data/categoryItemData.json')
@@ -257,69 +325,31 @@ $(function(){
             $(frame).html(html);
         })
     }
-    let sort = $('.section.livetheme .slide-list').data('sort');
-    
     categoryList(1, '#categoryBeautyList');
     categoryList(2, '#categoryFoodList');
     categoryList(3, '#categoryFashionList');
 
-    // FOOTER 네어버 사업자정보 버튼 
+    const swiper8 = new Swiper(".section.livetheme .group-slide", {
+        slidesPerView: "auto",
+        spaceBetween: 10,
+        freeMode: true,
+    });
+
+     // FOOTER 네어버 사업자정보 버튼 
     $('.footer .btn-info').click(function(){
         $(this).toggleClass('on');
         $('.footer .btn-wrap').toggleClass('on');
     })
-
-
-    // 스와이퍼 
-    var swiper = new Swiper("#home .cate-slide", {
-        pagination: {
-            el: ".swiper-pagination",
-        }
-    });
-    var swiper = new Swiper(".section.chance .group-slide", {
-        slidesPerView: "auto",
-        spaceBetween: 20,
-        freeMode: true,
-    });
-    var swiper = new Swiper(".section.popular .group-slide", {
-        slidesPerView: "auto",
-        spaceBetween: 10,
-        freeMode: true,
-    });
-    var swiper = new Swiper(".section.type .group-menu", {
-        slidesPerView: "auto",
-        freeMode: true,
-    });
-    var swiper = new Swiper(".section.trend .group-menu", {
-        slidesPerView: "auto",
-        spaceBetween: 8,
-        freeMode: true,
-    });
-    var swiper = new Swiper(".section.trend .group-slide", {
-        slidesPerView: "auto",
-        spaceBetween: 10,
-        freeMode: true,
-    });
-    var swiper = new Swiper(".section.theme .group-slide", {
-        slidesPerView: "auto",
-        spaceBetween: 10,
-        freeMode: true,
-    });
-    var swiper = new Swiper(".section.livetheme .group-slide", {
-        slidesPerView: "auto",
-        spaceBetween: 10,
-        freeMode: true,
-    });
     
     //EVENT PAGE
-    var swiper = new Swiper("#event .sc-menu .swiper", {
+    const swiper9 = new Swiper("#event .sc-menu .swiper", {
         slidesPerView: "auto",
         spaceBetween: 8,
         freeMode: true,
     });
 
     //CATE PAGE
-    var swiper = new Swiper("#cate .sc-cate .swiper", {
+    const swiper10 = new Swiper("#cate .sc-cate .swiper", {
         slidesPerView: "auto",
         spaceBetween: 20,
         freeMode: true,
