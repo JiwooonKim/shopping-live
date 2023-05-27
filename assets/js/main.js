@@ -1,5 +1,4 @@
 $(function(){
-
     // 카테고리 스와이퍼 
     const swiper1 = new Swiper("#home .cate-slide", {
         pagination: {
@@ -37,8 +36,6 @@ $(function(){
 
         if ( currentHour <= 12 ) {
             time = `${currentMonth}월 ${currentDay}일 오전 ${localHour}시 ${currentMin}분 기준`;
-        } else if (  ) {
-
         } else {
             time = `${currentMonth}월 ${currentDay}일 오후 ${localHour}시 ${currentMin}분 기준`;
         }
