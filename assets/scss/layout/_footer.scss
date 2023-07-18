@@ -48,6 +48,11 @@
         }
     }
     .group-info {
+        &.on { 
+            .btn-info svg {transform: rotate(-90deg);} 
+            .btn-wrap { display: block; }
+        }
+
         .btn-info {
             display: flex;  
             gap: 5px; 
@@ -55,7 +60,6 @@
             line-height: 1.24;
             font-size: 13px;
             color: #303038;
-            &.on { svg {transform: rotate(-90deg);} }
         }
         .btn-info svg {
             margin-left: 1px;
@@ -69,7 +73,6 @@
             padding: 9px 0 8px;
             background-color: #f8f8f8;
 
-            &.on { display: block; }
             .info-list {
                 display: flex;
                 flex-direction: column;

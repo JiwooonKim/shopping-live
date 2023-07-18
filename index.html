@@ -11,8 +11,8 @@
     <link rel="stylesheet" href="./assets/css/style.css">
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="./assets/js/main.js"></script>
+    <script defer src="./assets/js/common.js"></script>
+    <script defer src="./assets/js/main.js"></script>
 </head>
 <body>
     <header class="header">
@@ -210,7 +210,7 @@
                             </p>
                         </div>
                     </div>
-                    <span class="time"></span>
+                    <span id="currentTime" class="time"></span>
                 </div>
             </div>
             <div class="swiper group-slide">
@@ -223,7 +223,7 @@
         <section class="section type">
             <h2 class="blind">테마별 숏클립</h2>
             <div class="swiper group-menu">
-                <ul role="tablist" class="swiper-wrapper menu-list">
+                <ul role="tablist" class="swiper-wrapper menu-list" data-livesort="1">
                     <li class="swiper-slide menu-item">
                         <a href="" role="tab" aria-selected="true" class="menu" data-sort="1">원더랜드페스타</a>
                     </li>
@@ -547,7 +547,7 @@
                 </div>
             </div>
             <div class="swiper group-menu">
-                <ul class="swiper-wrapper menu-list" role="tablist">
+                <ul class="swiper-wrapper menu-list" role="tablist" data-livesort="2">
                     <li class="swiper-slide menu-item">
                         <a href="" role="tab" aria-selected="true" class="menu" data-sort="all">
                             <svg width="25" height="25" viewBox="0 0 25 25" xmlns="http://www.w3.org/2000/svg" focusable="false" aria-hidden="true" class="RoundItem_svg_all_WZH-x"><g fill="none" fill-rule="evenodd"><circle fill= "#F4F4F4" cx="12.5" cy="12.5" r="8.5"></circle><path d="m7.959 15 .304-1.07h1.442l.301 1.07h1.203l-1.493-4.665H8.335L6.83 15h1.128zm1.06-3.654.485 1.767H8.472l.495-1.767h.051zm5.61 2.71h-1.87v-3.721h-1.131V15h3.001v-.943zm3.505 0h-1.87v-3.721h-1.13V15h3v-.943z" fill="#929242" fill-rule="nonzero"></path></g></svg>
